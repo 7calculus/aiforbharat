@@ -1,0 +1,404 @@
+{
+  "simulated_calls": {
+    "BATCH7_001": {
+      "category": "EMERGENCY",
+      "text": "Svalpa thondre aagide, cylinder blast barthide kitchen lo, help madi please.",
+      "expected_intent": "Gas Cylinder Explosion",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_002": {
+      "category": "CLEAR",
+      "text": "Sir, road nalli potholes ide, car flat aagutte, BBMP ge complaint maadi.",
+      "expected_intent": "Civic Issue - Potholes",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_003": {
+      "category": "EMERGENCY",
+      "text": "Polite ga heltidini, choking food on, air nahi barthide, Heimlich.",
+      "expected_intent": "Active Choking",
+      "expected_confidence": 0.65,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_004": {
+      "category": "CONFIRM",
+      "text": "Little problem building lift, stuck between floors, panic inside, rescue.",
+      "expected_intent": "Elevator Entrapment",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_005": {
+      "category": "CLEAR",
+      "text": "Electricity bill wrong baride, svalpa check maadi update maadi.",
+      "expected_intent": "Utility Billing Dispute",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_006": {
+      "category": "EMERGENCY",
+      "text": "Modala bar call, gunshot wound shoulder, bleeding profuse, tourniquet.",
+      "expected_intent": "Gunshot Wound",
+      "expected_confidence": 0.88,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_007": {
+      "category": "CLEAR",
+      "text": "Garbage everywhere dump aagide, smell bahut, please pick it up.",
+      "expected_intent": "Civic Issue - Sanitation",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_008": {
+      "category": "CONFIRM",
+      "text": "Slight trouble river bank, flash flood sweep people, boat deploy.",
+      "expected_intent": "Water Rescue",
+      "expected_confidence": 0.45,
+      "expected_urgency": 0.92,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_009": {
+      "category": "CLEAR",
+      "text": "Street lights off ide from 3 days, night time walking difficulty.",
+      "expected_intent": "Civic Issue - Lighting",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_010": {
+      "category": "EMERGENCY",
+      "text": "Chinna fire wiring short, whole wing blaze hospital lo, patients bedridden.",
+      "expected_intent": "Hospital Fire",
+      "expected_confidence": 0.75,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_011": {
+      "category": "EMERGENCY",
+      "text": "I was just having lunch at the canteen and... ARRE BABA! Poison in food! Vomit blood!",
+      "expected_intent": "Acute Poisoning",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_012": {
+      "category": "CLEAR",
+      "text": "Bus late raaste, every day 30 mins wait, transport department helu.",
+      "expected_intent": "Public Transport Complaint",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_013": {
+      "category": "EMERGENCY",
+      "text": "My child is playing outside safely now... HAYRE DEVI! Kidnap van white! Chase!",
+      "expected_intent": "Abduction",
+      "expected_confidence": 0.44,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_014": {
+      "category": "CLEAR",
+      "text": "Water supply cut aagide full area, help maadi for tankers.",
+      "expected_intent": "Water Outage",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_015": {
+      "category": "EMERGENCY",
+      "text": "Waiting for auto rickshaw politely... AAAA! Mugging gang knife! Stab threat!",
+      "expected_intent": "Armed Mugging",
+      "expected_confidence": 0.38,
+      "expected_urgency": 0.88,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_016": {
+      "category": "CLEAR",
+      "text": "Market lo auto drivers overcharge, meter use maadalla, RTO check maadi.",
+      "expected_intent": "Transport Overcharge",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_017": {
+      "category": "EMERGENCY",
+      "text": "Office tea break casual... GAS LEAK FLOOR! Faint all colleagues!",
+      "expected_intent": "Mass Inhalation Emergency",
+      "expected_confidence": 0.43,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_018": {
+      "category": "CLEAR",
+      "text": "Park clean kaadu, too many mosquitoes, please do fogging.",
+      "expected_intent": "Civic - Pest Control",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_019": {
+      "category": "EMERGENCY",
+      "text": "Family picnic park nice... DROWNING LAKE! Two kids deep water!",
+      "expected_intent": "Active Drowning",
+      "expected_confidence": 0.40,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_020": {
+      "category": "CLEAR",
+      "text": "Traffic signal work maadalla Silk Board road on, help maadi.",
+      "expected_intent": "Infrastructure - Signal Failure",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.25,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_021": {
+      "category": "CONFIRM",
+      "text": "Yes, the assault report is confirmed, but location is KR Puram station, not airport road.",
+      "expected_intent": "Location Correction",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_022": {
+      "category": "CONFIRM",
+      "text": "Intent correct for robbery, but it's jewelry shop in Chickpet, not mall.",
+      "expected_intent": "Location Correction",
+      "expected_confidence": 0.62,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_023": {
+      "category": "CONFIRM",
+      "text": "Confirmed medical emergency, but stroke victim in HSR Layout BDA complex.",
+      "expected_intent": "Location Correction",
+      "expected_confidence": 0.65,
+      "expected_urgency": 0.90,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_024": {
+      "category": "CONFIRM",
+      "text": "Fire yes, but origin kitchen Block A, not parking lot in Marathahalli.",
+      "expected_intent": "Detail Correction",
+      "expected_confidence": 0.63,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_025": {
+      "category": "CONFIRM",
+      "text": "Accident details right, but motorcycle vs bus on Outer Ring Road near Bellandur.",
+      "expected_intent": "Detail Correction",
+      "expected_confidence": 0.67,
+      "expected_urgency": 0.75,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_026": {
+      "category": "CLEAR",
+      "text": "ATM lo cash illa for 2 days, bank manager ge phone maadi result helu.",
+      "expected_intent": "Banking Complaint",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_027": {
+      "category": "CONFIRM",
+      "text": "Electrocution report ok, but child on playground swing near transformer.",
+      "expected_intent": "Location Correction",
+      "expected_confidence": 0.61,
+      "expected_urgency": 0.95,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_028": {
+      "category": "CLEAR",
+      "text": "Internet slow, work delay, BSNL improvement ge call maadi.",
+      "expected_intent": "Utility Complaint",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.02,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_029": {
+      "category": "CONFIRM",
+      "text": "Fight confirmed, but with iron rods at bar in Indiranagar 100 Feet Road.",
+      "expected_intent": "Detail Correction",
+      "expected_confidence": 0.68,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_030": {
+      "category": "CONFIRM",
+      "text": "Heart attack intent right, but elderly woman alone in Frazer Town bungalow.",
+      "expected_intent": "Detail Correction",
+      "expected_confidence": 0.66,
+      "expected_urgency": 0.94,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_031": {
+      "category": "CONFIRM",
+      "text": "Svalpa problem aagide, train derail track on, coaches topple, emergency.",
+      "expected_intent": "Train Derailment",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.95,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_032": {
+      "category": "EMERGENCY",
+      "text": "Chinna issue ide, acid attack face on, skin melt, fast banni.",
+      "expected_intent": "Active Assault",
+      "expected_confidence": 0.70,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_033": {
+      "category": "CLEAR",
+      "text": "Lake dirty aagide, fish dying, pollution control ge report maadi.",
+      "expected_intent": "Environmental Issue",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_034": {
+      "category": "CLEAR",
+      "text": "Farmers water shortage, crops dry, irrigation department help maadi.",
+      "expected_intent": "Agricultural Utility",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.30,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_035": {
+      "category": "EMERGENCY",
+      "text": "Svalpa pain abdomen, appendix burst suspect, fever high, surgery.",
+      "expected_intent": "Appendicitis",
+      "expected_confidence": 0.80,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_036": {
+      "category": "EMERGENCY",
+      "text": "Modala complaint, terrorist bomb blast market, limbs scatter.",
+      "expected_intent": "Bomb Blast",
+      "expected_confidence": 0.92,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_037": {
+      "category": "CLEAR",
+      "text": "Cinema hall ticket black lo sell maduttave, police raid maadi.",
+      "expected_intent": "Consumer Fraud",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_038": {
+      "category": "EMERGENCY",
+      "text": "I am simply watering plants and... RAM RAM! Wild elephant charge!",
+      "expected_intent": "Animal Attack",
+      "expected_confidence": 0.44,
+      "expected_urgency": 0.92,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_039": {
+      "category": "CLEAR",
+      "text": "Post office delay parcel, business loss, India Post ge call maadi.",
+      "expected_intent": "Postal Complaint",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_040": {
+      "category": "EMERGENCY",
+      "text": "Attending wedding reception fine... PANIC! Stage collapse! Guests under.",
+      "expected_intent": "Structural Failure",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.97,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_041": {
+      "category": "CLEAR",
+      "text": "College fee hike sudden, students protest, UGC regulate maadi.",
+      "expected_intent": "Educational Issue",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH7_042": {
+      "category": "EMERGENCY",
+      "text": "Phone charging bedside... EXPLOSION BATTERY! Face burn!",
+      "expected_intent": "Battery Explosion",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_043": {
+      "category": "EMERGENCY",
+      "text": "Cooking roti on tawa... CYLINDER HISSS! Leak ignite boom!",
+      "expected_intent": "Cylinder Fire",
+      "expected_confidence": 0.50,
+      "expected_urgency": 0.96,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_044": {
+      "category": "EMERGENCY",
+      "text": "Kids homework table... ROOF LEAK CEILING FALL! Leg trapped!",
+      "expected_intent": "Structure Collapse",
+      "expected_confidence": 0.52,
+      "expected_urgency": 0.93,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH7_045": {
+      "category": "CONFIRM",
+      "text": "Yes, poisoning confirmed, but food from street vendor in Majestic.",
+      "expected_intent": "Detail Correction",
+      "expected_confidence": 0.65,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_046": {
+      "category": "CONFIRM",
+      "text": "Flood report right, but underpass in Silk Board submerged.",
+      "expected_intent": "Location Correction",
+      "expected_confidence": 0.68,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_047": {
+      "category": "CONFIRM",
+      "text": "Suicide attempt yes, but rooftop building in Jayanagar.",
+      "expected_intent": "Location Correction",
+      "expected_confidence": 0.66,
+      "expected_urgency": 0.95,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_048": {
+      "category": "CONFIRM",
+      "text": "Burns incident correct, but factory workers 10 affected in Peenya.",
+      "expected_intent": "Location Correction",
+      "expected_confidence": 0.61,
+      "expected_urgency": 0.90,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_049": {
+      "category": "CONFIRM",
+      "text": "Tree fall confirmed, but on live wire school playground.",
+      "expected_intent": "Detail Correction",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.88,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH7_050": {
+      "category": "CONFIRM",
+      "text": "Riot details ok, but triggered by eve teasing in Russell Market.",
+      "expected_intent": "Detail Correction",
+      "expected_confidence": 0.64,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    }
+  }
+}

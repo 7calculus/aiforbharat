@@ -1,0 +1,404 @@
+{
+  "simulated_calls": {
+    "BATCH4_001": {
+      "category": "CONFIRM",
+      "text": "I was walking home peacefully but... ARRE BABA! Yeno ide? Help, injury serious!",
+      "expected_intent": "Unverified Serious Injury",
+      "expected_confidence": 0.45,
+      "expected_urgency": 0.75,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_002": {
+      "category": "CONFIRM",
+      "text": "Just checking the kitchen gas and... OYEE! Agni lagide! Fire banni fast!",
+      "expected_intent": "Kitchen Fire",
+      "expected_confidence": 0.50,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_003": {
+      "category": "CONFIRM",
+      "text": "My phone battery is low now... AAAA! Snake bite! Poison, hospital rush!",
+      "expected_intent": "Venomous Bite",
+      "expected_confidence": 0.40,
+      "expected_urgency": 0.90,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_004": {
+      "category": "CONFIRM",
+      "text": "Waiting for the bus calmly but... HAYRE! Accident! Blood everywhere, ambulance!",
+      "expected_intent": "Road Accident",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.88,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_005": {
+      "category": "CONFIRM",
+      "text": "I am fine at the park today... DEY! Heart pain! Chest tight, doctor!",
+      "expected_intent": "Cardiac Distress",
+      "expected_confidence": 0.52,
+      "expected_urgency": 0.92,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_006": {
+      "category": "CONFIRM",
+      "text": "Simply buying vegetables and... RAM RAM! Knife fight! Police banni!",
+      "expected_intent": "Armed Fight",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_007": {
+      "category": "CONFIRM",
+      "text": "Car parked safely outside... BAAAM! Collision! Driver hurt bad!",
+      "expected_intent": "Vehicle Collision",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_008": {
+      "category": "CONFIRM",
+      "text": "Having tea in the evening but... AYYO DEVI! Gas leak smell! Evacuate!",
+      "expected_intent": "Gas Leak",
+      "expected_confidence": 0.47,
+      "expected_urgency": 0.82,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_009": {
+      "category": "CONFIRM",
+      "text": "Kids playing outside normally... OH NO! Drowning pool lo! Save child!",
+      "expected_intent": "Active Drowning",
+      "expected_confidence": 0.40,
+      "expected_urgency": 0.95,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_010": {
+      "category": "CONFIRM",
+      "text": "Just reading newspaper and... AAAAA! Electrocution! Shock la unde!",
+      "expected_intent": "Electrocution",
+      "expected_confidence": 0.38,
+      "expected_urgency": 0.94,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_011": {
+      "category": "CONFIRM",
+      "text": "Office work going smooth but... BANG! Robbery! Gunman here!",
+      "expected_intent": "Armed Robbery",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.98,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_012": {
+      "category": "CONFIRM",
+      "text": "Rain is light today only... FLOOD! Water high, boat banni!",
+      "expected_intent": "Flooding",
+      "expected_confidence": 0.50,
+      "expected_urgency": 0.78,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_013": {
+      "category": "CONFIRM",
+      "text": "Cooking dinner casually... BURNS! Fire on hand, pain kill!",
+      "expected_intent": "Severe Burn",
+      "expected_confidence": 0.54,
+      "expected_urgency": 0.84,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_014": {
+      "category": "CONFIRM",
+      "text": "Neighbor chatting friendly... SCREAM! Assault! Help woman!",
+      "expected_intent": "Physical Assault",
+      "expected_confidence": 0.43,
+      "expected_urgency": 0.91,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_015": {
+      "category": "CONFIRM",
+      "text": "Train on time arriving... CRASH! Derail, trapped inside!",
+      "expected_intent": "Train Derailment",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.96,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_016": {
+      "category": "CONFIRM",
+      "text": "Eating lunch peacefully... POISON! Vomit blood, gastric!",
+      "expected_intent": "Poisoning",
+      "expected_confidence": 0.46,
+      "expected_urgency": 0.89,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_017": {
+      "category": "CONFIRM",
+      "text": "Shopping mall crowded fun... BOMB! Suspicious bag, run!",
+      "expected_intent": "Bomb Threat",
+      "expected_confidence": 0.51,
+      "expected_urgency": 0.97,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_018": {
+      "category": "CONFIRM",
+      "text": "Jogging morning routine... ATTACK! Dog bite deep!",
+      "expected_intent": "Animal Attack",
+      "expected_confidence": 0.53,
+      "expected_urgency": 0.76,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_019": {
+      "category": "CONFIRM",
+      "text": "Family dinner together... QUAKE! Building shake, fall!",
+      "expected_intent": "Earthquake",
+      "expected_confidence": 0.44,
+      "expected_urgency": 0.93,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_020": {
+      "category": "CONFIRM",
+      "text": "Driving slow traffic... PILEUP! Cars smash, injured!",
+      "expected_intent": "Multiple Vehicle Collision",
+      "expected_confidence": 0.49,
+      "expected_urgency": 0.81,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_021": {
+      "category": "CONFIRM",
+      "text": "Slight headache starting... STROKE! Face drop, speech gone!",
+      "expected_intent": "Medical - Stroke",
+      "expected_confidence": 0.41,
+      "expected_urgency": 0.99,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_022": {
+      "category": "CONFIRM",
+      "text": "Garden watering flowers... TREE FALL! Power line spark!",
+      "expected_intent": "Electrical Hazard",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.72,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_023": {
+      "category": "CONFIRM",
+      "text": "Watching TV relaxed... GAS! Faint smell, headache all!",
+      "expected_intent": "Carbon Monoxide/Gas Leak",
+      "expected_confidence": 0.39,
+      "expected_urgency": 0.83,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_024": {
+      "category": "CONFIRM",
+      "text": "Birthday party small... FIGHT! Knives out, blood!",
+      "expected_intent": "Violence involving Weapons",
+      "expected_confidence": 0.56,
+      "expected_urgency": 0.87,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_025": {
+      "category": "CONFIRM",
+      "text": "Morning walk safe area... MUGGING! Wallet gone, hit head!",
+      "expected_intent": "Assault/Robbery",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.74,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_026": {
+      "category": "CONFIRM",
+      "text": "Little smoke from stove... AAG LAG GAYI! House fire, banni!",
+      "expected_intent": "Structure Fire",
+      "expected_confidence": 0.50,
+      "expected_urgency": 0.86,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_027": {
+      "category": "CONFIRM",
+      "text": "Svalpa jenu ide room lo... Bees attack! Swarm everywhere!",
+      "expected_intent": "Animal/Insect Threat",
+      "expected_confidence": 0.62,
+      "expected_urgency": 0.55,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_028": {
+      "category": "CONFIRM",
+      "text": "Thondra nodidini market... Riot start, stones pel rahe!",
+      "expected_intent": "Civil Unrest/Riot",
+      "expected_confidence": 0.45,
+      "expected_urgency": 0.88,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_029": {
+      "category": "CONFIRM",
+      "text": "Chinna problem car nalli... Engine fire, explode risk!",
+      "expected_intent": "Vehicle Fire",
+      "expected_confidence": 0.53,
+      "expected_urgency": 0.79,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_030": {
+      "category": "CONFIRM",
+      "text": "Yavaga barutte doctor... Labor pain, baby coming now!",
+      "expected_intent": "Medical - Childbirth",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_031": {
+      "category": "CONFIRM",
+      "text": "Slight cut finger... Bleeding nonstop, faint feeling!",
+      "expected_intent": "Hemorrhage",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.65,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_032": {
+      "category": "CONFIRM",
+      "text": "Modala bar emergency... Chest pain little, but heavy!",
+      "expected_intent": "Cardiac Distress",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.75,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_033": {
+      "category": "CONFIRM",
+      "text": "House lo svalpa noise... Intruder? Door break sound!",
+      "expected_intent": "Burglary/Home Invasion",
+      "expected_confidence": 0.35,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_034": {
+      "category": "CONFIRM",
+      "text": "Water tap drip only... Flood basement, electrics wet!",
+      "expected_intent": "Flooding/Electrical Hazard",
+      "expected_confidence": 0.52,
+      "expected_urgency": 0.60,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_035": {
+      "category": "CONFIRM",
+      "text": "Bike chain loose bit... Crash wall, leg twist bad!",
+      "expected_intent": "Accident/Injury",
+      "expected_confidence": 0.59,
+      "expected_urgency": 0.50,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_036": {
+      "category": "CONFIRM",
+      "text": "Neighbor kid crying soft... Fall deep well, trapped!",
+      "expected_intent": "Rescue - Fall into Well",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.90,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_037": {
+      "category": "CONFIRM",
+      "text": "Fan not spinning well... Short circuit, sparks fly!",
+      "expected_intent": "Electrical Fire Risk",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.68,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_038": {
+      "category": "CONFIRM",
+      "text": "Dairy milk smell off... Poison batch, all sick!",
+      "expected_intent": "Mass Food Poisoning",
+      "expected_confidence": 0.54,
+      "expected_urgency": 0.77,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_039": {
+      "category": "CONFIRM",
+      "text": "Street dog barking mild... Rabies bite, foam mouth!",
+      "expected_intent": "Animal Bite/Rabies Risk",
+      "expected_confidence": 0.41,
+      "expected_urgency": 0.82,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_040": {
+      "category": "CONFIRM",
+      "text": "Roof leak small rain... Collapse ceiling, hurt head!",
+      "expected_intent": "Structural Failure/Injury",
+      "expected_confidence": 0.44,
+      "expected_urgency": 0.73,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_041": {
+      "category": "CONFIRM",
+      "text": "Battery phone low... Lost forest, wild animals near!",
+      "expected_intent": "Stranded/Wild Animal Threat",
+      "expected_confidence": 0.38,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_042": {
+      "category": "CONFIRM",
+      "text": "Tea too hot sip... Scald throat, breathe hard!",
+      "expected_intent": "Internal Burn/Respiratory Distress",
+      "expected_confidence": 0.56,
+      "expected_urgency": 0.64,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_043": {
+      "category": "CONFIRM",
+      "text": "Parcel late delivery... Bomb inside ticking? Open no!",
+      "expected_intent": "Suspicious Package",
+      "expected_confidence": 0.32,
+      "expected_urgency": 0.95,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_044": {
+      "category": "CONFIRM",
+      "text": "Chair wobble sit... Fall stair, back break!",
+      "expected_intent": "Traumatic Injury/Spinal",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_045": {
+      "category": "CONFIRM",
+      "text": "Flower pot drop... Glass cut artery, blood pool!",
+      "expected_intent": "Severe Hemorrhage",
+      "expected_confidence": 0.46,
+      "expected_urgency": 0.96,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_046": {
+      "category": "CONFIRM",
+      "text": "Light bulb flicker... Explosion glass, eye injury!",
+      "expected_intent": "Facial/Eye Injury",
+      "expected_confidence": 0.51,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_047": {
+      "category": "CONFIRM",
+      "text": "Sock wet floor... Slip fracture hip, can't stand!",
+      "expected_intent": "Traumatic Injury - Fall",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.60,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_048": {
+      "category": "CONFIRM",
+      "text": "Key lost door... Locked in fire smoke rising!",
+      "expected_intent": "Trapped in Fire",
+      "expected_confidence": 0.30,
+      "expected_urgency": 0.98,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_049": {
+      "category": "CONFIRM",
+      "text": "Bread burn toaster... Kitchen blaze start, extinguish no!",
+      "expected_intent": "Kitchen Fire",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH4_050": {
+      "category": "CONFIRM",
+      "text": "Pillow fight kids... Pillow choke, blue face!",
+      "expected_intent": "Asphyxiation",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.99,
+      "expected_decision": "CONFIRM"
+    }
+  }
+}

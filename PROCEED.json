@@ -1,0 +1,404 @@
+{
+  "simulated_calls": {
+    "BATCH3_001": {
+      "category": "CLEAR",
+      "text": "Sir, road nalli potholes ide, car flat aagutte, nimage problem aagutte!",
+      "expected_intent": "Civic Issue - Potholes",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_002": {
+      "category": "CLEAR",
+      "text": "Water supply cut aagide, daily life kharab aagide, helpline ne action tegedi!",
+      "expected_intent": "Utility Issue - Water Outage",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_003": {
+      "category": "CLEAR",
+      "text": "Garbage everywhere dump aagide, disease spread avutte, government helavalla!",
+      "expected_intent": "Civic Issue - Sanitation",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_004": {
+      "category": "CLEAR",
+      "text": "Electricity bill wrong baride, pay madakke baralla, complaint register maadi!",
+      "expected_intent": "Billing Dispute - Electricity",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_005": {
+      "category": "CLEAR",
+      "text": "Bus late raaste, office ge time ge baralla, transport department helu!",
+      "expected_intent": "Public Transport Complaint",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_006": {
+      "category": "CLEAR",
+      "text": "Street lights off ide, night time danger, police come maadi!",
+      "expected_intent": "Civic Issue - Streetlights",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_007": {
+      "category": "CLEAR",
+      "text": "Market nalli overprice, cheating madutte, consumer court ge case file maadi!",
+      "expected_intent": "Consumer Complaint - Overpricing",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_008": {
+      "category": "CLEAR",
+      "text": "Drainage block aagide, water logging, health problem avutte!",
+      "expected_intent": "Civic Issue - Drainage",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_009": {
+      "category": "VAGUE",
+      "text": "School bus safe kaadu, children risk lo irutte, education department call maadi!",
+      "expected_intent": "School Transport Safety",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.40,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH3_010": {
+      "category": "CLEAR",
+      "text": "Hospital lo doctor illa, emergency time wait maadutte, minister ge complaint!",
+      "expected_intent": "Medical Facility Complaint",
+      "expected_confidence": 0.88,
+      "expected_urgency": 0.35,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_011": {
+      "category": "CLEAR",
+      "text": "Park clean kaadu, dogs bark madutte, corporation helavalla!",
+      "expected_intent": "Civic Issue - Park Maintenance",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_012": {
+      "category": "CLEAR",
+      "text": "Auto drivers overcharge, meter use maadalla, RTO ge report maadi!",
+      "expected_intent": "Transport Complaint - Auto Rickshaw",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_013": {
+      "category": "CLEAR",
+      "text": "Noise pollution from bar, sleep baralla, police FIR file maadi!",
+      "expected_intent": "Noise Complaint",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_014": {
+      "category": "CLEAR",
+      "text": "Construction dust everywhere, breathing problem, BBMP stop maadi!",
+      "expected_intent": "Environmental Complaint - Dust",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_015": {
+      "category": "CLEAR",
+      "text": "Shop lo fake products, health kharab, food inspector banni!",
+      "expected_intent": "Consumer Complaint - Counterfeit",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_016": {
+      "category": "CLEAR",
+      "text": "Traffic signal work maadalla, accidents avutte, signal fix maadi!",
+      "expected_intent": "Civic Issue - Traffic Signal",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.25,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_017": {
+      "category": "CLEAR",
+      "text": "Rain time road flood, vehicles stuck, drainage clean maadi!",
+      "expected_intent": "Civic Issue - Waterlogging",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.35,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_018": {
+      "category": "CLEAR",
+      "text": "Vendor license illade sell madutte, hygiene zero, health dept action!",
+      "expected_intent": "Health Code Violation",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_019": {
+      "category": "CLEAR",
+      "text": "ATM cash illa, long queue, bank manager ge phone maadi!",
+      "expected_intent": "Bank Service Complaint",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_020": {
+      "category": "CLEAR",
+      "text": "Internet slow, work delay, BSNL improve maadi!",
+      "expected_intent": "Utility Complaint - Internet",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.02,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_021": {
+      "category": "CLEAR",
+      "text": "Mosquitoes breeding, dengue spread, fogging maadi immediately!",
+      "expected_intent": "Public Health - Pest Control",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_022": {
+      "category": "CLEAR",
+      "text": "Temple around encroachment, devotees problem, ASI protect maadi!",
+      "expected_intent": "Civic Issue - Encroachment",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_023": {
+      "category": "CLEAR",
+      "text": "Lake dirty aagide, fish dying, pollution control board helu!",
+      "expected_intent": "Environmental Issue - Water Pollution",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_024": {
+      "category": "CLEAR",
+      "text": "Farmers water shortage, crops dry, irrigation dept release water!",
+      "expected_intent": "Agricultural Utility Request",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.30,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_025": {
+      "category": "CLEAR",
+      "text": "Slum area power cut, poor people suffer, BESCOM restore!",
+      "expected_intent": "Utility Issue - Power Outage",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.25,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_026": {
+      "category": "CLEAR",
+      "text": "Cinema hall ticket black, fans angry, police raid maadi!",
+      "expected_intent": "Illegal Ticket Sales",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_027": {
+      "category": "CLEAR",
+      "text": "Hotel food poison, stomach pain, FSSAI inspect maadi!",
+      "expected_intent": "Food Safety Complaint",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.40,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_028": {
+      "category": "VAGUE",
+      "text": "Rickshaw pullers fight, public fear, traffic police control!",
+      "expected_intent": "Public Altercation",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.45,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH3_029": {
+      "category": "CLEAR",
+      "text": "Bridge weak, heavy vehicle pass maadalla, PWD repair!",
+      "expected_intent": "Infrastructure Hazard",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.25,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_030": {
+      "category": "CLEAR",
+      "text": "Library books missing, students study baralla, librarian change!",
+      "expected_intent": "Public Facility Complaint",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_031": {
+      "category": "CLEAR",
+      "text": "Playground occupied by goons, kids play maadalla, corporation clear!",
+      "expected_intent": "Civic Issue - Public Space Occupation",
+      "expected_confidence": 0.89,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_032": {
+      "category": "CLEAR",
+      "text": "Meter reading wrong, extra bill, KEB complaint portal use!",
+      "expected_intent": "Utility Billing Dispute",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_033": {
+      "category": "CLEAR",
+      "text": "Festival time firecracker ban break, air pollution, police fine!",
+      "expected_intent": "Environmental Rule Violation",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_034": {
+      "category": "CLEAR",
+      "text": "Hostel food bad quality, students sick, warden action tegi!",
+      "expected_intent": "Institutional Food Complaint",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_035": {
+      "category": "CLEAR",
+      "text": "Railway station toilet dirty, passengers complain, railways clean!",
+      "expected_intent": "Public Transit Sanitation",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_036": {
+      "category": "CLEAR",
+      "text": "Market parking no space, vehicles clamp, BMC parking lot maadi!",
+      "expected_intent": "Civic Issue - Parking",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_037": {
+      "category": "VAGUE",
+      "text": "Doctor prescription wrong medicine, patient worse, medical council probe!",
+      "expected_intent": "Medical Malpractice Allegation",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.50,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH3_038": {
+      "category": "CLEAR",
+      "text": "Election time fake voter id, democracy kharab, EC helpline call!",
+      "expected_intent": "Electoral Fraud Report",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_039": {
+      "category": "CLEAR",
+      "text": "Factory smoke pollution, nearby residents cough, KSPCB shutdown!",
+      "expected_intent": "Environmental Pollution Report",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_040": {
+      "category": "CLEAR",
+      "text": "Beach clean kaadu, tourists avoid, tourism dept maintain!",
+      "expected_intent": "Civic Maintenance - Beach",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_041": {
+      "category": "CLEAR",
+      "text": "College fee hike sudden, students protest, UGC regulate!",
+      "expected_intent": "Educational Institution Complaint",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_042": {
+      "category": "CLEAR",
+      "text": "Post office delay parcel, business loss, India post improve!",
+      "expected_intent": "Postal Service Complaint",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_043": {
+      "category": "EMERGENCY",
+      "text": "Street dog attack, children bite, animal control catch!",
+      "expected_intent": "Animal Attack - Active",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH3_044": {
+      "category": "EMERGENCY",
+      "text": "Gas cylinder leak, house fire risk, supplier replace!",
+      "expected_intent": "Hazardous Gas Leak",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.88,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH3_045": {
+      "category": "CLEAR",
+      "text": "Bank loan interest high, farmers suicide, RBI cap!",
+      "expected_intent": "Financial Policy Complaint",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_046": {
+      "category": "CLEAR",
+      "text": "Wedding hall noise late night, neighbors disturb, police warn!",
+      "expected_intent": "Noise Complaint",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_047": {
+      "category": "VAGUE",
+      "text": "Fruit shop pesticide spray, kids eat poison, agriculture dept check!",
+      "expected_intent": "Food Safety / Toxicity Check",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.60,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH3_048": {
+      "category": "CLEAR",
+      "text": "Gym equipment broken, members waste money, owner fix!",
+      "expected_intent": "Consumer Complaint - Services",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_049": {
+      "category": "CLEAR",
+      "text": "Taxi app surge price, passengers cheat, transport minister ban!",
+      "expected_intent": "Consumer Complaint - Transport App",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH3_050": {
+      "category": "VAGUE",
+      "text": "Nursing home elder abuse, family complain, social welfare raid!",
+      "expected_intent": "Elder Abuse Allegation",
+      "expected_confidence": 0.65,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    }
+  }
+}

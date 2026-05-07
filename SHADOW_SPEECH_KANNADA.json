@@ -1,0 +1,404 @@
+{
+  "simulated_calls": {
+    "SHADOW_K_BATCH_001": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಹಲೋ ಜೊಮ್ಯಾಟೋ, ಚಿಕನ್ ಬಿರಿಯಾನಿ ಆರ್ಡರ್ ಮಾಡ್ತೀನಿ... ಮನೆಯಲ್ಲಿ ರೆಡ್ ಸಾಸ್ ಫ್ಲೋರ್ ಮೇಲೆ ಚೆಲ್ಲಿತ್ತು, ಕ್ಲೀನ್ ಕಳುಹಿಸಿ.",
+      "expected_intent": "Domestic Violence - Coded Distress",
+      "expected_confidence": 0.35,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_002": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಸ್ವಿಗ್ಗಿ ಸಾರ್, ಪಿಜ್ಜಾ ಲಾರ್ಜ್ ವೆಗ್... ಬಾಗಿಲು ಹಿಂಜ್ ಬಿಕ್ಕಿಹೋಗಿದೆ, ಓಪನ್ ಮಾಡೋಕೆ ಸಹಾಯ.",
+      "expected_intent": "Forced Confinement - Coded Distress",
+      "expected_confidence": 0.38,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_003": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬಿಗ್‌ಬಾಸ್ಕೆಟ್ ಮಿಲ್ಕ್ ೧೦ ಲೀಟರ್... ಕೈಗೆ ರೆಡ್ ಸ್ಪಾಟ್ ಬಂದಿದೆ, ವೈಪ್ ಪ್ಯಾಕ್ ಕಳಿಸಿ.",
+      "expected_intent": "Physical Injury - Coded Distress",
+      "expected_confidence": 0.32,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_004": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪ್ಲಂಬರ್ ಅಂಕಲ್, ಸಿಂಕ್ ಪೈಪ್ ಲೀಕ್ ಕೆಂಪು ನೀರು... ಬೇಗ ಬಂದು ಫಿಕ್ಸ್ ಮಾಡಿ.",
+      "expected_intent": "Weapon Assault / Bleeding - Coded",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_005": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್ ಜಿ, ಫ್ಯಾನ್ ಸ್ಪಾರ್ಕ್ ಹೊಡೆಯ್ತೆ... ಸ್ವಿಚ್ ಟಚ್ ಕಷ್ಟ, ಬನ್ನಿ.",
+      "expected_intent": "Active Abuse / Threat - Coded",
+      "expected_confidence": 0.40,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_006": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಅಮ್ಮಾ, ಹವಾಮಾನ ರೈನ್ ಬರ್ತಿದೆಯಾ? ರೂಮ್ ಡೋರ್ ಲಾಕ್ ಜ್ಯಾಮ್ ಆಗಿದೆ.",
+      "expected_intent": "Entrapment / Confinement",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_007": {
+      "category": "SHADOW_SPEECH",
+      "text": "ದೀದಿ, ಪಾರ್ಸಲ್ ಸ್ಟ್ಯಾಟಸ್ ಹೇಳ್ತೀಯಾ? ಕೀ ಲಾಸ್ಟ್ ಆಗಿ ಒಳಗೆ ಸಿಕ್ಕಿದ್ದೀನಿ.",
+      "expected_intent": "Confinement - Coded Distress",
+      "expected_confidence": 0.33,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_008": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬ್ಯಾಂಕ್ ಹೆಲ್ಪ್, ಅಕೌಂಟ್ ಬ್ಯಾಲೆನ್ಸ್ ಚೆಕ್... ಡೆಬಿಟ್ ಜಾಸ್ತಿ ಕಟ್ ಆಗ್ತಿದೆ.",
+      "expected_intent": "Financial / Domestic Abuse",
+      "expected_confidence": 0.41,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_009": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಡೊಮಿನೋಸ್ ಪಿಜ್ಜಾ, ಎಕ್ಸ್‌ಟ್ರಾ ಚೀಜ್... ಟೇಬಲ್ ಕ್ಲಾತ್ ರೆಡ್ ಸ್ಟೈನ್ ಡ್ರಾಪ್.",
+      "expected_intent": "Active Bleeding - Coded Distress",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_010": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬಿರಿಯಾನಿ ಆರ್ಡರ್, ಮಟನ್ ಸ್ಪೆಷಲ್... ಪ್ಯಾಕೆಟ್ ಟೇಪ್ ಟೈಟ್ ತುಂಬಾ ಓಪನ್ ಆಗಲ್ಲ.",
+      "expected_intent": "Binding / Restraint - Coded",
+      "expected_confidence": 0.34,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_011": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪ್ಲಂಬರ್ ಸಾರ್, ಬಾತ್‌ರೂಮ್ ಟ್ಯಾಪ್ ಕೆಂಪು ಫ್ಲೋ... ಪೈಪ್ ಬ್ರೇಕ್ ಕ್ಲೀನ್.",
+      "expected_intent": "Assault / Hemorrhage - Coded",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_012": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಎಲೆಕ್ಟ್ರಿಕ್ ಮನ್, ವೈರ್ ಹೀಟ್ ಸ್ಪಾರ್ಕ್... ಟಚ್ ಭಯ, ಫಿಕ್ಸ್ ಬೇಕು.",
+      "expected_intent": "Hostile Environment Threat",
+      "expected_confidence": 0.39,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_013": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಅಮ್ಮ, ಗ್ರಾಸರಿ ಲಿಸ್ಟ್ ಸೆಂಡ್... ಷೆಲ್ಫ್ ಡೋರ್ ಬಿಕ್ಕಿತು ಓಪನ್.",
+      "expected_intent": "Confinement / Entrapment",
+      "expected_confidence": 0.43,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_014": {
+      "category": "SHADOW_SPEECH",
+      "text": "ದೀದಿ, ಫೋನ್ ರೀಚಾರ್ಜ್ ಪ್ಲ್ಯಾನ್... ಸಿಗ್ನಲ್ ಕಟ್ ಸಡನ್ ಆನ್.",
+      "expected_intent": "Interference with Communication",
+      "expected_confidence": 0.40,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_015": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬ್ಯಾಂಕ್ ಅಂಟಿ, ಲೋನ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್... EMI ಡ್ರಾಪ್ ಝೀರೋ ಫೀಲ್.",
+      "expected_intent": "Financial Coercion / Abuse",
+      "expected_confidence": 0.45,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_016": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಜೊಮ್ಯಾಟೋ ರೋಲ್ಸ್ ಕತಿ... ಸಾಸ್ ಓವರ್‌ಫ್ಲೋ ಫ್ಲೋರ್ ರೆಡ್.",
+      "expected_intent": "Blood Spatter - Coded Distress",
+      "expected_confidence": 0.37,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_017": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಸ್ವಿಗ್ಗಿ ಪಾಸ್ಟಾ ಚೀಜ್... ಪ್ಯಾಸ್ಟಾ ಸಾಸ್ ಸ್ಪಿಲ್ ಹ್ಯಾಂಡ್ ಸ್ಟಿಕಿ.",
+      "expected_intent": "Physical Abuse - Coded Distress",
+      "expected_confidence": 0.32,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_018": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬಿಗ್‌ಬಾಸ್ಕೆಟ್ ಆಟಾ ೫ಕೆಜಿ... ಬ್ಯಾಗ್ ರಿಪ್ ಡ್ರಾಪ್ ಫ್ಲೋರ್.",
+      "expected_intent": "Forced Opening / Violence",
+      "expected_confidence": 0.37,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_019": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪ್ಲಂಬರ್ ಬಾಯ್, ಗೀಸರ್ ವಾಟರ್ ಕೆಂಪು ಹಾಟ್... ಸ್ಕಿನ್ ರೆಡ್ ಫಿಕ್ಸ್.",
+      "expected_intent": "Scalding / Burn Torture - Coded",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_020": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್, ಸಾಕೆಟ್ ಬರ್ನ್ ಸ್ಮೆಲ್... ಪ್ಲಗ್ ಪುಲ್ ಕಷ್ಟ.",
+      "expected_intent": "Intimidation / Physical Threat",
+      "expected_confidence": 0.39,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_021": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಅಮ್ಮಾ, ಟಿವಿ ರಿಮೋಟ್ ಬ್ಯಾಟರಿ... ಬಟನ್ ಜ್ಯಾಮ್ ಪ್ರೆಸ್ ಆಗಲ್ಲ.",
+      "expected_intent": "Isolation / Information Control",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.60,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_022": {
+      "category": "SHADOW_SPEECH",
+      "text": "ದೀದಿ, ಶಾಪಿಂಗ್ ಲಿಸ್ಟ್... ಬ್ಯಾಗ್ ಲಾಕ್ ಟೈಟ್ ಇನ್‌ಸೈಡ್.",
+      "expected_intent": "Restricted Movement - Coded",
+      "expected_confidence": 0.38,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_023": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬ್ಯಾಂಕ್ ಸಾರ್, OTP ಸೆಂಡ್... ಪಿನ್ ಬ್ಲಾಕ್ ಫೀಲ್ ಟ್ರೈ.",
+      "expected_intent": "Control of Communication / Access",
+      "expected_confidence": 0.41,
+      "expected_urgency": 0.88,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_024": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪಿಜ್ಜಾ ಹಟ್ ಮಾರ್ಗರಿಟಾ... ಸಾಸ್ ಡ್ರಾಪ್ ರೆಡ್ ಫ್ಲೋರ್ ಸ್ಟೈನ್.",
+      "expected_intent": "Active Bleeding / Assault Aftermath",
+      "expected_confidence": 0.35,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_025": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬಿರಿಯಾನಿ ವೆಗ್... ರೈಸ್ ಸಾಫ್ಟ್ ಓವರ್, ಪ್ಯಾಕ್ ಟೇಪ್ ಸ್ಟಕ್.",
+      "expected_intent": "Binding / Forced Position - Coded",
+      "expected_confidence": 0.34,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_026": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪ್ಲಂಬರ್ ಜಿ, ಡ್ರೈನ್ ಸ್ಮೆಲ್ ಕೆಂಪು... ಬ್ಲಾಕ್ ಕ್ಲಿಯರ್ ಬೇಕು.",
+      "expected_intent": "Serious Bleeding / Injury - Coded",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_027": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಎಲೆಕ್ಟ್ರಿಕ್, ಲೈಟ್ ಬಲ್ಬ್ ಗ್ಲಾಸ್ ಶ್ಯಾಟರ್... ಕಟ್ ಸ್ಮಾಲ್ ಹ್ಯಾಂಡ್.",
+      "expected_intent": "Laceration / Active Violence",
+      "expected_confidence": 0.39,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_028": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಅಮ್ಮ, ಕುಕೀ ರೆಸಿಪಿ ಹೇಳು... ಓವನ್ ಡೋರ್ ಜ್ಯಾಮ್ ಹೀಟ್.",
+      "expected_intent": "Burn Injury / Torture - Coded",
+      "expected_confidence": 0.33,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_029": {
+      "category": "SHADOW_SPEECH",
+      "text": "ದೀದಿ, ಫ್ಲೈಟ್ ಟಿಕೆಟ್... ಸೀಟ್ ಬೆಲ್ಟ್ ಟೈಟ್ ನೆಕ್.",
+      "expected_intent": "Active Choking / Strangling",
+      "expected_confidence": 0.31,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_030": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬ್ಯಾಂಕ್, FD ರೇಟ್ ಚೆಕ್... ಇಂಟರೆಸ್ಟ್ ಡ್ರಾಪ್ ಸಡನ್.",
+      "expected_intent": "Financial Control / Abuse",
+      "expected_confidence": 0.63,
+      "expected_urgency": 0.75,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_031": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಡೊಮಿನೋಸ್ ವಿಂಗ್ಸ್... ಸಾಸ್ ಸ್ಪಿಲ್ ರೆಡ್ ಫಿಂಗರ್.",
+      "expected_intent": "Hemorrhage / Blood - Coded",
+      "expected_confidence": 0.33,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_032": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಸ್ವಿಗ್ಗಿ ಐಸ್‌ಕ್ರೀಮ್... ಮೆಲ್ಟ್ ಸ್ಟಿಕಿ ಫ್ಲೋರ್ ರೆಡ್.",
+      "expected_intent": "Bleeding Aftermath - Coded Distress",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.80,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_033": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬಿಗ್‌ಬಾಸ್ಕೆಟ್ ವೆಜ್... ಟೊಮ್ಯಾಟೋ ಜ್ಯೂಸ್ ಸ್ಪಿಲ್ ಹ್ಯಾಂಡ್.",
+      "expected_intent": "Blood on Limbs - Coded Distress",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_034": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪ್ಲಂಬರ್, ಷವರ್ ಕೆಂಪು ಫ್ಲೋ... ಪೈಪ್ ಲೂಸ್ ಫಿಕ್ಸ್.",
+      "expected_intent": "Weapon Assault - Coded Distress",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_035": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್, ಮೀಟರ್ ಬಿಲ್ ಹೈ... ವೈರ್ ಲೂಸ್ ಚೆಕ್.",
+      "expected_intent": "Risk of Violence / Unstable Threats",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.70,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_036": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಅಮ್ಮಾ, ವೀಕೆಂಡ್ ಪ್ಲ್ಯಾನ್... ರೂಮ್ ವಿಂಡೋ ಶಟ್ ಸಿಕ್ಕೆ.",
+      "expected_intent": "Forced Confinement",
+      "expected_confidence": 0.44,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_037": {
+      "category": "SHADOW_SPEECH",
+      "text": "ದೀದಿ, ಬಸ್ ಪಾಸ್... ಕಾರ್ಡ್ ಸ್ಕ್ಯಾನ್ ಸ್ಟಕ್ ಆಗಿದೆ.",
+      "expected_intent": "Immobility / Movement Restriction",
+      "expected_confidence": 0.38,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_038": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬ್ಯಾಂಕ್ ಅಂಟಿ, ಚೆಕ್ ಬುಕ್... ಸೈನ್ ಮ್ಯಾಚ್ ನಾಟ್ ಓಪನ್.",
+      "expected_intent": "Identity / Information Control",
+      "expected_confidence": 0.63,
+      "expected_urgency": 0.75,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_039": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಜೊಮ್ಯಾಟೋ ಬರ್ಗರ್... ಬನ್ ಕ್ರಮ್ಬಲ್ ರೆಡ್ ಸಾಸ್.",
+      "expected_intent": "Violence Aftermath - Coded",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.80,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_040": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬಿರಿಯಾನಿ ಮಟನ್... ಪ್ಯಾಕ್ ಲೀಕ್ ರೆಡ್ ಫ್ಲೋ.",
+      "expected_intent": "Severe Bleeding - Coded Distress",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_041": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪ್ಲಂಬರ್ ಸಾರ್, ಟಾಯ್‌ಲೆಟ್ ಕೆಂಪು... ಫ್ಲಶ್ ಬ್ಲಾಕ್.",
+      "expected_intent": "Internal Bleeding / Assault Aftermath",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_042": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಎಲೆಕ್ಟ್ರಿಕ್ ಜಿ, ಸ್ವಿಚ್ ಹಾಟ್... ಫೈರ್ ಸ್ಮೆಲ್ ಭಯ.",
+      "expected_intent": "Aggression / Outburst Threats",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.70,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_043": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಅಮ್ಮ, ಗ್ರಾಸರಿ ಬೌಗ್ಟ್... ಬ್ಯಾಗ್ ಹ್ಯಾಂಡಲ್ ಬ್ರೇಕ್.",
+      "expected_intent": "Physical Assault - Coded",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.65,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_044": {
+      "category": "SHADOW_SPEECH",
+      "text": "ದೀದಿ, ಜ್ಯೂಲರಿ ಬಾಕ್ಸ್... ಲಾಕ್ ಕೀ ಲಾಸ್ಟ್.",
+      "expected_intent": "Confinement / Isolation",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.65,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_045": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬ್ಯಾಂಕ್, ಕಾರ್ಡ್ ಲಿಮಿಟ್... ಟ್ರಾನ್ಸ್ ಕಟ್ ಸಡನ್.",
+      "expected_intent": "Financial Coercion / Abuse",
+      "expected_confidence": 0.63,
+      "expected_urgency": 0.75,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_046": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪಿಜ್ಜಾ ಸುಪ್ರೀಮ್... ಟಾಪಿಂಗ್ ಫಾಲ್ ರೆಡ್ ಸಾಸ್.",
+      "expected_intent": "Assault Damage - Coded Distress",
+      "expected_confidence": 0.50,
+      "expected_urgency": 0.75,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_047": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಸ್ವಿಗ್ಗಿ ಡೆಸರ್ಟ್... ಜಾಮೂನ್ ಸಿರಪ್ ಸ್ಪಿಲ್ ಸ್ಟಿಕಿ.",
+      "expected_intent": "Fluid/Blood Evidence - Coded",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.80,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_048": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಬಿಗ್‌ಬಾಸ್ಕೆಟ್ ಫ್ರೂಟ್... ಕೇಳಾ ಜ್ಯೂಸ್ ರೆಡ್ ಹ್ಯಾಂಡ್.",
+      "expected_intent": "Blood on Limbs - Coded Distress",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_049": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಪ್ಲಂಬರ್, ಕಿಚನ್ ಲೀಕ್ ಕೆಂಪು... ಸಿಂಕ್ ಕ್ಲಗ್.",
+      "expected_intent": "Active Bleeding / Injury - Coded",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_K_BATCH_050": {
+      "category": "SHADOW_SPEECH",
+      "text": "ಎಲೆಕ್ಟ್ರಿಷಿಯನ್, ಪಾವರ್ ಫ್ಲಕ್ಟ್ಯುಯೇಷನ್... ಫ್ಯೂಸ್ ಬ್ಲೋ ರಿಪೀಟ್.",
+      "expected_intent": "Repeated Violent Outbursts",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.70,
+      "expected_decision": "ESCALATE"
+    }
+  }
+}

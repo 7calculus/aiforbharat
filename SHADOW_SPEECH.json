@@ -1,0 +1,404 @@
+{
+  "simulated_calls": {
+    "SHADOW_001": {
+      "category": "SHADOW_SPEECH",
+      "text": "Hello Zomato, ek biryani order karna hai, address lo... husband room me hai, red ink spill floor on, urgent clean.",
+      "expected_intent": "Domestic Violence - Coded Distress",
+      "expected_confidence": 0.35,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_002": {
+      "category": "SHADOW_SPEECH",
+      "text": "Swiggy yaar, pizza large with extra cheese, delivery fast... help, door locked inside, can't move.",
+      "expected_intent": "Domestic Violence - Coded Distress",
+      "expected_confidence": 0.38,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_003": {
+      "category": "SHADOW_SPEECH",
+      "text": "BigBasket grocery list: rice, dal, onions... arm hurting bad, blue marks, plumber bhejo leak fix.",
+      "expected_intent": "Physical Abuse - Coded Distress",
+      "expected_confidence": 0.32,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_004": {
+      "category": "SHADOW_SPEECH",
+      "text": "Electrician ji, spark from wire kitchen lo, check karo... he shouting loud, phone hide karke bol rahi.",
+      "expected_intent": "Intimate Partner Violence",
+      "expected_confidence": 0.40,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_005": {
+      "category": "SHADOW_SPEECH",
+      "text": "Plumber uncle, tap leaking red water, pipe burst jaise... bruises neck pe, breathe hard.",
+      "expected_intent": "Physical Assault - Possible Strangling",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_006": {
+      "category": "SHADOW_SPEECH",
+      "text": "Amma, small accident kitchen me, hand slip cut deep... attacker watching, send help silent.",
+      "expected_intent": "Domestic Violence - High Urgency",
+      "expected_confidence": 0.45,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_007": {
+      "category": "SHADOW_SPEECH",
+      "text": "Didi, parcel late aa raha, tracking number wrong... locked room, keys taken, break door.",
+      "expected_intent": "Forced Confinement",
+      "expected_confidence": 0.33,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_008": {
+      "category": "SHADOW_SPEECH",
+      "text": "Bank uncle, transaction galat ho gaya, extra charge... slaps continuous, face swollen, police code.",
+      "expected_intent": "Active Physical Abuse",
+      "expected_confidence": 0.41,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_009": {
+      "category": "SHADOW_SPEECH",
+      "text": "Hello Domino's, veg pizza thin crust, address 2nd floor... throat choke hold, air nahi, rescue.",
+      "expected_intent": "Active Life Threat - Choking",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_010": {
+      "category": "SHADOW_SPEECH",
+      "text": "Biryani bhaiya, chicken dum full spicy, two plates... leg kick broken maybe, can't stand.",
+      "expected_intent": "Severe Physical Injury",
+      "expected_confidence": 0.34,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_011": {
+      "category": "SHADOW_SPEECH",
+      "text": "Grocerywala, milk packet 5 litre, eggs dozen... eye black, vision blur, doctor signal.",
+      "expected_intent": "Head Trauma / Physical Abuse",
+      "expected_confidence": 0.36,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_012": {
+      "category": "SHADOW_SPEECH",
+      "text": "Electrician saar, fuse blow repeated, light flicker... hair pull hard, scalp bleed, urgent.",
+      "expected_intent": "Physical Assault - Scalp Injury",
+      "expected_confidence": 0.39,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_013": {
+      "category": "SHADOW_SPEECH",
+      "text": "Plumber ji, bathroom overflow red color, clean fast... blood mix water, stab wound small.",
+      "expected_intent": "Weapon Assault - Bleeding",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_014": {
+      "category": "SHADOW_SPEECH",
+      "text": "Mummy, friend se call, small spill ink red sofa on... punches stomach, vomit feel.",
+      "expected_intent": "Internal Trauma / Domestic Abuse",
+      "expected_confidence": 0.31,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_015": {
+      "category": "SHADOW_SPEECH",
+      "text": "Behen, late delivery biryani ka, heat pack... wrist twist force, bone crack sound.",
+      "expected_intent": "Fracture / Domestic Violence",
+      "expected_confidence": 0.40,
+      "expected_urgency": 0.96,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_016": {
+      "category": "SHADOW_SPEECH",
+      "text": "Zomato order paneer tikka, extra naan... room confine, window shut, suffocate.",
+      "expected_intent": "Confinement / Respiratory Distress",
+      "expected_confidence": 0.37,
+      "expected_urgency": 0.92,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_017": {
+      "category": "SHADOW_SPEECH",
+      "text": "Electricwala, short circuit smell, fan stop... slap marks cheek, lip split.",
+      "expected_intent": "Facial Injury / Physical Abuse",
+      "expected_confidence": 0.32,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_018": {
+      "category": "SHADOW_SPEECH",
+      "text": "Plumber bhai, sink block heavy red flow... knife threat neck, whisper help.",
+      "expected_intent": "Active Weapon Threat",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_019": {
+      "category": "SHADOW_SPEECH",
+      "text": "Amma call, grocery forget oil bottle... arm burn cigarette, skin peel.",
+      "expected_intent": "Torture / Burn Injury",
+      "expected_confidence": 0.33,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_020": {
+      "category": "SHADOW_SPEECH",
+      "text": "Didi bol, bank statement wrong debit... choke collar tight, voice strain.",
+      "expected_intent": "Active Strangling",
+      "expected_confidence": 0.31,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_021": {
+      "category": "SHADOW_SPEECH",
+      "text": "Pizza hut, margherita medium, coke zero... foot stomp hard, limp walk.",
+      "expected_intent": "Physical Injury - Foot/Leg",
+      "expected_confidence": 0.35,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_022": {
+      "category": "SHADOW_SPEECH",
+      "text": "Biryani center, mutton full plate, raita side... head bang wall, dizzy bad.",
+      "expected_intent": "Head Trauma / Concussion",
+      "expected_confidence": 0.34,
+      "expected_urgency": 0.97,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_023": {
+      "category": "SHADOW_SPEECH",
+      "text": "BigBasket fruits banana 10, apples kilo... finger break twist, scream hold.",
+      "expected_intent": "Active Torture / Bone Fracture",
+      "expected_confidence": 0.36,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_024": {
+      "category": "SHADOW_SPEECH",
+      "text": "Electrician ji, bulb burst glass everywhere... glass cut arm deep, bandage no.",
+      "expected_intent": "Severe Bleeding / Cut",
+      "expected_confidence": 0.39,
+      "expected_urgency": 0.94,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_025": {
+      "category": "SHADOW_SPEECH",
+      "text": "Plumber saar, pipe crack leak slow red... razor cut thigh, hide cloth.",
+      "expected_intent": "Weapon Assault / Bleeding",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_026": {
+      "category": "SHADOW_SPEECH",
+      "text": "Nanhe, small accident stair fall... push stair down, rib crack pain.",
+      "expected_intent": "Physical Assault - Fall",
+      "expected_confidence": 0.44,
+      "expected_urgency": 0.92,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_027": {
+      "category": "SHADOW_SPEECH",
+      "text": "Friend call, parcel stuck custom... drag hair floor, scalp tear.",
+      "expected_intent": "Physical Abuse - Scalp Injury",
+      "expected_confidence": 0.38,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_028": {
+      "category": "SHADOW_SPEECH",
+      "text": "Bank helpline, OTP not come sms... phone snatch try, fight on.",
+      "expected_intent": "Active Confrontation / Theft",
+      "expected_confidence": 0.41,
+      "expected_urgency": 0.88,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_029": {
+      "category": "SHADOW_SPEECH",
+      "text": "Swiggy pasta order, cheese overload... belt whip back, welts red.",
+      "expected_intent": "Physical Abuse / Whipping",
+      "expected_confidence": 0.33,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_030": {
+      "category": "SHADOW_SPEECH",
+      "text": "Domino's garlic bread extra, chicken wings... knee cap hit, can't kneel.",
+      "expected_intent": "Joint Injury / Physical Assault",
+      "expected_confidence": 0.35,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_031": {
+      "category": "SHADOW_SPEECH",
+      "text": "Grocery app, atta 5kg, sugar sack... ear slap ring, hearing loss.",
+      "expected_intent": "Physical Assault - Ear Injury",
+      "expected_confidence": 0.37,
+      "expected_urgency": 0.80,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_032": {
+      "category": "SHADOW_SPEECH",
+      "text": "Electric man, meter high bill wrong... hot iron press skin, burn scream.",
+      "expected_intent": "Severe Torture / Burn",
+      "expected_confidence": 0.32,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_033": {
+      "category": "SHADOW_SPEECH",
+      "text": "Plumber uncle, toilet flush red water... period heavy no, injury internal.",
+      "expected_intent": "Internal Hemorrhage / Sexual Abuse",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_034": {
+      "category": "SHADOW_SPEECH",
+      "text": "Maa, biryani recipe puche... forced drink alcohol, poison feel.",
+      "expected_intent": "Poisoning / Forced Ingestion",
+      "expected_confidence": 0.31,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_035": {
+      "category": "SHADOW_SPEECH",
+      "text": "Dost, pizza share karna... locked closet dark, panic breath.",
+      "expected_intent": "Forced Confinement / Panic",
+      "expected_confidence": 0.40,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_036": {
+      "category": "SHADOW_SPEECH",
+      "text": "Bank auntie, loan EMI late notice... threat kill family, fear max.",
+      "expected_intent": "Extreme Life Threat",
+      "expected_confidence": 0.42,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_037": {
+      "category": "SHADOW_SPEECH",
+      "text": "Zomato rolls kathi, chicken seekh... suffocate pillow face, fight off.",
+      "expected_intent": "Attempted Suffocation",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_038": {
+      "category": "SHADOW_SPEECH",
+      "text": "Electrician bhai, switch hot touch... electric shock simulate pain.",
+      "expected_intent": "Torture / Pain Infliction",
+      "expected_confidence": 0.39,
+      "expected_urgency": 0.88,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_039": {
+      "category": "SHADOW_SPEECH",
+      "text": "Plumber ji, geyser hot burst skin... boiling water pour punish.",
+      "expected_intent": "Severe Burn / Torture",
+      "expected_confidence": 0.30,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_040": {
+      "category": "SHADOW_SPEECH",
+      "text": "Amma ji, grocery list update salt... salt rub wound open.",
+      "expected_intent": "Active Torture",
+      "expected_confidence": 0.33,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_041": {
+      "category": "SHADOW_SPEECH",
+      "text": "Behen call, delivery boy late... boy friend jealous beat.",
+      "expected_intent": "Physical Assault - Jealousy",
+      "expected_confidence": 0.45,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_042": {
+      "category": "SHADOW_SPEECH",
+      "text": "Pizza order supreme toppings all... supreme pain body ache.",
+      "expected_intent": "Severe Body Trauma",
+      "expected_confidence": 0.50,
+      "expected_urgency": 0.75,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_043": {
+      "category": "SHADOW_SPEECH",
+      "text": "Biryani veg option try... veg weak no meat strength.",
+      "expected_intent": "Verbal/Psychological Abuse",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.50,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_044": {
+      "category": "SHADOW_SPEECH",
+      "text": "BigBasket veggies fresh only... fresh wounds daily new.",
+      "expected_intent": "Chronic Physical Abuse",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_045": {
+      "category": "SHADOW_SPEECH",
+      "text": "Electricwala fuse replace... fuse anger blow anytime.",
+      "expected_intent": "Unpredictable Violent Threats",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.70,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_046": {
+      "category": "SHADOW_SPEECH",
+      "text": "Plumber pipe fix bend... bend body force position.",
+      "expected_intent": "Physical Abuse / Forced Posture",
+      "expected_confidence": 0.52,
+      "expected_urgency": 0.80,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_047": {
+      "category": "SHADOW_SPEECH",
+      "text": "Mummy small talk weather... weather storm home inside.",
+      "expected_intent": "Domestic Crisis",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.60,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_048": {
+      "category": "SHADOW_SPEECH",
+      "text": "Friend parcel open help... open cage dog like.",
+      "expected_intent": "Psychological Abuse / Degradation",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.65,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_049": {
+      "category": "SHADOW_SPEECH",
+      "text": "Bank balance check zero... zero hope left now.",
+      "expected_intent": "Financial Abuse / Despair",
+      "expected_confidence": 0.63,
+      "expected_urgency": 0.75,
+      "expected_decision": "ESCALATE"
+    },
+    "SHADOW_050": {
+      "category": "SHADOW_SPEECH",
+      "text": "Swiggy dessert gulab jamun hot... hot tears endless flow.",
+      "expected_intent": "Emotional/Physical Abuse",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.80,
+      "expected_decision": "ESCALATE"
+    }
+  }
+}

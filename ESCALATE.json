@@ -1,0 +1,396 @@
+{
+  "simulated_calls": {
+    "BATCH2_001": {
+      "category": "EMERGENCY",
+      "text": "Sir, accident aagide road mulla, blood everywhere, ambulance banni fast!",
+      "expected_intent": "Major Traffic Accident",
+      "expected_confidence": 0.88,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_002": {
+      "category": "EMERGENCY",
+      "text": "Fire lagide house lo, smoke bahut, log bahar nikal nahi pa rahe!",
+      "expected_intent": "House Fire / Trapped Occupants",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_003": {
+      "category": "EMERGENCY",
+      "text": "Drowning in lake, help karo, child water me doob raha hai!",
+      "expected_intent": "Active Drowning",
+      "expected_confidence": 0.92,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_004": {
+      "category": "EMERGENCY",
+      "text": "Heart attack aayitide, chest pain, doctor banni immediately!",
+      "expected_intent": "Cardiac Arrest",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.99,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_005": {
+      "category": "EMERGENCY",
+      "text": "Fight madutte street lo, knife use madutte, police ravaru!",
+      "expected_intent": "Armed Public Altercation",
+      "expected_confidence": 0.85,
+      "expected_urgency": 0.92,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_006": {
+      "category": "EMERGENCY",
+      "text": "Gas leak kitchen nalli, smell strong, evacuate maadi!",
+      "expected_intent": "Hazardous Gas Leak",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_007": {
+      "category": "EMERGENCY",
+      "text": "Snake bite aagide, poison spread, anti-venom banni hospital!",
+      "expected_intent": "Venomous Animal Bite",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.96,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_008": {
+      "category": "EMERGENCY",
+      "text": "Car crash highway on, injured bahut, traffic jam, ambulance!",
+      "expected_intent": "Highway Collision / Mass Injury",
+      "expected_confidence": 0.89,
+      "expected_urgency": 0.94,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_009": {
+      "category": "EMERGENCY",
+      "text": "Building collapse risk, cracks ide, people inside, rescue team!",
+      "expected_intent": "Structural Failure / Rescue",
+      "expected_confidence": 0.86,
+      "expected_urgency": 0.97,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_010": {
+      "category": "EMERGENCY",
+      "text": "Electrocution aagide, wire touch, shock la unde, power cut maadi!",
+      "expected_intent": "Active Electrocution",
+      "expected_confidence": 0.87,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_011": {
+      "category": "EMERGENCY",
+      "text": "Robbery madutte bank mulla, gunshots sunnayi, police come quick!",
+      "expected_intent": "Armed Robbery / Active Shooter",
+      "expected_confidence": 0.93,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_012": {
+      "category": "EMERGENCY",
+      "text": "Flood aagide village lo, water high, boat banni save karo!",
+      "expected_intent": "Flash Flood / Water Rescue",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_013": {
+      "category": "EMERGENCY",
+      "text": "Burns severe, stove blast, pain bahut, hospital rush!",
+      "expected_intent": "Severe Burn Injury",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.96,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_014": {
+      "category": "EMERGENCY",
+      "text": "Suicide attempt, roof on khade, counselor banni talk maadi!",
+      "expected_intent": "Active Suicide Threat",
+      "expected_confidence": 0.88,
+      "expected_urgency": 0.99,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_015": {
+      "category": "EMERGENCY",
+      "text": "Train derail ho gaya, passengers trapped, NDRF bhejo!",
+      "expected_intent": "Major Train Derailment",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_016": {
+      "category": "EMERGENCY",
+      "text": "Poison khaya galti se, vomiting, stomach pain, gastric doctor!",
+      "expected_intent": "Accidental Poisoning",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.94,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_017": {
+      "category": "EMERGENCY",
+      "text": "Rape case, girl crying, attacker bhag gaya, FIR register!",
+      "expected_intent": "Sexual Assault Response",
+      "expected_confidence": 0.89,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_018": {
+      "category": "EMERGENCY",
+      "text": "Earthquake tremors, building shake, safe place guide!",
+      "expected_intent": "Earthquake / Structural Panic",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_019": {
+      "category": "EMERGENCY",
+      "text": "Child missing park me, last seen 5 min pehle, search team!",
+      "expected_intent": "Missing Child",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_020": {
+      "category": "EMERGENCY",
+      "text": "Stroke aagide, face numb, speech problem, 108 ambulance!",
+      "expected_intent": "Medical Emergency - Stroke",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_021": {
+      "category": "EMERGENCY",
+      "text": "Bomb threat mall lo, evacuation karo, bomb squad banni!",
+      "expected_intent": "Bomb Threat / Evacuation",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_022": {
+      "category": "EMERGENCY",
+      "text": "Vehicular pileup, multiple cars, fire catch, extinguishers!",
+      "expected_intent": "Multi-Vehicle Pileup / Fire",
+      "expected_confidence": 0.89,
+      "expected_urgency": 0.97,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_023": {
+      "category": "EMERGENCY",
+      "text": "Domestic violence, wife beating, blood on floor, police arrest!",
+      "expected_intent": "Active Domestic Violence",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_024": {
+      "category": "EMERGENCY",
+      "text": "Allergic reaction, swelling throat, breathing nahi ho raha!",
+      "expected_intent": "Anaphylactic Shock",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.99,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_025": {
+      "category": "EMERGENCY",
+      "text": "Shooting incident, gunman loose, lockdown area!",
+      "expected_intent": "Active Shooter",
+      "expected_confidence": 0.94,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_026": {
+      "category": "EMERGENCY",
+      "text": "Tree fall on power line, sparks flying, danger, cut power!",
+      "expected_intent": "Fallen Power Line Hazard",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_027": {
+      "category": "EMERGENCY",
+      "text": "Labor pain start, baby coming, maternity hospital nearest!",
+      "expected_intent": "Active Childbirth",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_028": {
+      "category": "EMERGENCY",
+      "text": "Kidnapping attempt, child chheena, white van, chase karo!",
+      "expected_intent": "Active Kidnapping",
+      "expected_confidence": 0.93,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_029": {
+      "category": "EMERGENCY",
+      "text": "Chemical spill factory, workers exposed, hazmat team!",
+      "expected_intent": "Hazardous Material Spill",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_030": {
+      "category": "EMERGENCY",
+      "text": "Bridge collapse, vehicles fallen river me, divers bhejo!",
+      "expected_intent": "Bridge Collapse / Mass Rescue",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_031": {
+      "category": "EMERGENCY",
+      "text": "Assault with acid, face burn, victim screaming, ambulance!",
+      "expected_intent": "Acid Attack",
+      "expected_confidence": 0.94,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_032": {
+      "category": "EMERGENCY",
+      "text": "Wild animal attack, tiger village enter, forest dept!",
+      "expected_intent": "Wild Animal Encroachment",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.96,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_033": {
+      "category": "EMERGENCY",
+      "text": "Plane crash nearby, smoke pillar, airport emergency!",
+      "expected_intent": "Aviation Disaster",
+      "expected_confidence": 0.92,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_034": {
+      "category": "EMERGENCY",
+      "text": "Food poisoning party me, 20 log sick, hospital beds ready!",
+      "expected_intent": "Mass Food Poisoning",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.88,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_035": {
+      "category": "EMERGENCY",
+      "text": "Hostage situation, shop owner tied, negotiator banni!",
+      "expected_intent": "Hostage Situation",
+      "expected_confidence": 0.91,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_036": {
+      "category": "EMERGENCY",
+      "text": "Landslide road block, trapped under mud, JCB bhejo!",
+      "expected_intent": "Landslide / Trapped Victims",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_037": {
+      "category": "EMERGENCY",
+      "text": "Seizure attack, body shaking, don't touch, medical help!",
+      "expected_intent": "Active Seizure",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.92,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_038": {
+      "category": "EMERGENCY",
+      "text": "Terrorist spotted, bag suspicious, bomb check!",
+      "expected_intent": "Terrorism / Suspicious Package",
+      "expected_confidence": 0.88,
+      "expected_urgency": 0.99,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_039": {
+      "category": "EMERGENCY",
+      "text": "Ship sinking harbor, crew SOS, coast guard rescue!",
+      "expected_intent": "Maritime Disaster",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_040": {
+      "category": "EMERGENCY",
+      "text": "Riot shuru market lo, stones pel rahe, lathi charge!",
+      "expected_intent": "Public Riot / Mob Violence",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_041": {
+      "category": "EMERGENCY",
+      "text": "Hypothermia cold night, body blue, warm blankets!",
+      "expected_intent": "Severe Hypothermia",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.92,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_042": {
+      "category": "EMERGENCY",
+      "text": "Explosion gas station, fireball, fire brigade multiple!",
+      "expected_intent": "Massive Explosion / Fire",
+      "expected_confidence": 0.97,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_043": {
+      "category": "EMERGENCY",
+      "text": "Elderly fall, hip fracture, can't walk, stretcher!",
+      "expected_intent": "Geriatric Medical Emergency",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_044": {
+      "category": "EMERGENCY",
+      "text": "Cyber attack hospital, life support fail, backup power!",
+      "expected_intent": "Critical Infrastructure Failure",
+      "expected_confidence": 0.89,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_045": {
+      "category": "EMERGENCY",
+      "text": "Mass shooting school, lockdown, SWAT team!",
+      "expected_intent": "Active Shooter (School)",
+      "expected_confidence": 0.98,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_046": {
+      "category": "EMERGENCY",
+      "text": "Tsunami warning, coastal evacuate, high ground!",
+      "expected_intent": "Natural Disaster Warning",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_047": {
+      "category": "EMERGENCY",
+      "text": "Carbon monoxide poisoning, all faint, windows open!",
+      "expected_intent": "Toxic Gas Exposure",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_048": {
+      "category": "EMERGENCY",
+      "text": "Animal cruelty, dog beaten, vet rescue!",
+      "expected_intent": "Animal Cruelty",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.82,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH2_049": {
+      "category": "EMERGENCY",
+      "text": "Nuclear leak plant se, radiation alert, iodine tablets!",
+      "expected_intent": "Radiation Emergency",
+      "expected_confidence": 0.97,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    }
+  }
+}

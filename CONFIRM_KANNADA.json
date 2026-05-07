@@ -1,0 +1,404 @@
+{
+  "simulated_calls": {
+    "BATCH_K3_001": {
+      "category": "CONFIRM",
+      "text": "ಮನೆಯಲ್ಲಿ ಸ್ವಲ್ಪ ಧೂಮ್ರ ಬರುತ್ತಿದೆ, ಬೆಂಕಿ ಕಾಣುತ್ತೆಯಾ, ಯಾರು ಬನ್ನಿ ರೀ?",
+      "expected_intent": "Coded Structure Fire",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.75,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_002": {
+      "category": "CONFIRM",
+      "text": "ಚಿನ್ನ ತೊಂದರೆ ಎದೆಯಲ್ಲಿ, ಉಸಿರಾಡೋದು ಕಷ್ಟ, ಸ್ವಲ್ಪ ರೆಸ್ಟ್ ಬೇಕು ಅಂತೆ.",
+      "expected_intent": "Understated Cardiac Distress",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_003": {
+      "category": "CONFIRM",
+      "text": "ಸ್ವಲ್ಪ ಕಟ್ ಕೈಗೆ, ಬೋಲು ಹರಿಯುತ್ತಿದೆ ತುಂಬಾ, ಬ್ಯಾಂಡ್ ಹಾಕಿ.",
+      "expected_intent": "Severe Bleeding",
+      "expected_confidence": 0.52,
+      "expected_urgency": 0.65,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_004": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ರಸ್ತೆಯಲ್ಲಿ ನಡೆಯುತ್ತಿದ್ದೆ ಆದರೆ... ಅಯ್ಯೋ! ಅಕ್ಸಿಡೆಂಟ್! ಬ್ಲಡ್ ಎಲ್ಲೆಡೆ!",
+      "expected_intent": "Language-Shift Accident",
+      "expected_confidence": 0.45,
+      "expected_urgency": 0.90,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_005": {
+      "category": "CONFIRM",
+      "text": "ಕಿಚನ್ ಗ್ಯಾಸ್ ಚೆಕ್ ಮಾಡುತ್ತಿದ್ದೆ... ಓಯೀ! ಫೈರ್ ಲಗಿದೆ! ಬನ್ನಿ ಫಾಸ್ಟ್!",
+      "expected_intent": "Language-Shift Kitchen Fire",
+      "expected_confidence": 0.47,
+      "expected_urgency": 0.88,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_006": {
+      "category": "CONFIRM",
+      "text": "ರಸ್ತೆಯಲ್ಲಿ ನೀರು ತುಂಬಾ, ಕಾರು ಮುಳುಗುತ್ತಿದೆ, ಏನು ಮಾಡೋ?",
+      "expected_intent": "Active Flooding / Vehicle Submergence",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_007": {
+      "category": "CONFIRM",
+      "text": "ಬೀದಿಯಲ್ಲಿ ಜನರು ಕೂಗುತ್ತಿದ್ದಾರೆ, ರಾಳ ಹಾರುತ್ತೆ, ಭಯವಾಗ್ತೆ.",
+      "expected_intent": "Public Unrest / Civil Disturbance",
+      "expected_confidence": 0.52,
+      "expected_urgency": 0.65,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_008": {
+      "category": "CONFIRM",
+      "text": "ಬಿಲ್ಡಿಂಗ್ ಅಡಿಯಲ್ಲಿ ಕ್ರ್ಯಾಕ್, ಜನ ಒಳಗೆ, ಕುಸಿಯುತ್ತದೆಯಾ?",
+      "expected_intent": "Structural Hazard",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.75,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_009": {
+      "category": "CONFIRM",
+      "text": "ಸ್ವಲ್ಪ ನೆಗಡಿ ಇದೆ, ಮುಖ ಒಂದು ಭಾಗ ಉದ್ದು, ಮಾತು ಬರುತ್ತಿಲ್ಲ.",
+      "expected_intent": "Understated Stroke Symptoms",
+      "expected_confidence": 0.50,
+      "expected_urgency": 0.92,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_010": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಪಾರ್ಕ್ ವಾಕ್ ಮಾಡ್ತಿದ್ದೆ... ಹಯ್ರೆ! ಡಾಗ್ ಬೈಟ್! ಡೀಪ್ ಕಟ್!",
+      "expected_intent": "Language-Shift Animal Attack",
+      "expected_confidence": 0.44,
+      "expected_urgency": 0.82,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_011": {
+      "category": "CONFIRM",
+      "text": "ರಸ್ತೆಯಲ್ಲಿ ಕಾರುಗಳು ಸ್ಮ್ಯಾಶ್, ಇಂಜುರ್ಡ್ ಜನರು, ಹೆಲ್ಪ್ ಬೇಕು.",
+      "expected_intent": "Vehicle Collision",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.78,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_012": {
+      "category": "CONFIRM",
+      "text": "ಚಿನ್ನ ಶಾಕ್ ವಿದ್ಯುತ್‌ನಿಂದ, ಬಾಡಿ ಜಿಗಿದೆ, ಪವರ್ ಕಟ್ ಮಾಡಿ.",
+      "expected_intent": "Electrocution Injury",
+      "expected_confidence": 0.56,
+      "expected_urgency": 0.90,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_013": {
+      "category": "CONFIRM",
+      "text": "ಲೇಕ್‌ನಲ್ಲಿ ಯಾರೋ ಡೂಂಗುತ್ತಿದ್ದಾರೆ, ಸ್ವಲ್ಪ ನೀರು ಡೀಪ್, ಸೇವ್.",
+      "expected_intent": "Water Rescue",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.94,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_014": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಆಫೀಸ್ ಹೋಗ್ತಿದ್ದೆ... ಬ್ಯಾಂಗ್! ರಾಬರಿ! ಗನ್ ಪಾಯಿಂಟ್!",
+      "expected_intent": "Language-Shift Armed Robbery",
+      "expected_confidence": 0.40,
+      "expected_urgency": 0.98,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_015": {
+      "category": "CONFIRM",
+      "text": "ಮಳೆಯಲ್ಲಿ ರಸ್ತೆ ಫ್ಲಡ್, ವೆಹಿಕಲ್ಸ್ ಸ್ಟಕ್, ಬೋಟ್ ಬೇಕೇ?",
+      "expected_intent": "Stranded in Flood",
+      "expected_confidence": 0.54,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_016": {
+      "category": "CONFIRM",
+      "text": "ಸ್ವಲ್ಪ ವಾಮಿಟ್ ಬ್ಲಡ್, ಫುಡ್ ಪಾಯಿಸನ್ ಅಂತೆ, ಡಾಕ್ಟರ್ ಸಲಹೆ.",
+      "expected_intent": "Understated Medical Emergency",
+      "expected_confidence": 0.52,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_017": {
+      "category": "CONFIRM",
+      "text": "ಬೀದಿಯಲ್ಲಿ ಗುಂಪು ಫೈಟ್, ನೈಫ್ ಕಾಣುತ್ತೆ, ಪೊಲೀಸ್ ಬನ್ನಿ.",
+      "expected_intent": "Armed Violence",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_018": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಶಾಪಿಂಗ್ ಮಾಡ್ತಿದ್ದೆ... ಸ್ಕ್ರೀಮ್! ಅಸಾಲ್ಟ್! ಹೆಲ್ಪ್!",
+      "expected_intent": "Active Physical Assault",
+      "expected_confidence": 0.41,
+      "expected_urgency": 0.95,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_019": {
+      "category": "CONFIRM",
+      "text": "ಬಿಲ್ಡಿಂಗ್ ಶೇಕ್ ಆಗುತ್ತಿದೆ, ಕ್ವೇಕ್ ಟ್ರೆಮರ್, ಸೇಫ್ ಪ್ಲೇಸ್?",
+      "expected_intent": "Natural Disaster - Earthquake",
+      "expected_confidence": 0.44,
+      "expected_urgency": 0.88,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_020": {
+      "category": "CONFIRM",
+      "text": "ಚಿನ್ನ ಬೆರಳು ಕಟ್, ಆರ್ಟರಿ ಬ್ಲೀಡ್, ಸ್ಟಾಪ್ ಹೋಗಲ್ಲ.",
+      "expected_intent": "Severe Hemorrhage",
+      "expected_confidence": 0.51,
+      "expected_urgency": 0.92,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_021": {
+      "category": "CONFIRM",
+      "text": "ರಸ್ತೆಯಲ್ಲಿ ಬ್ಯಾಗ್ ಸಸ್ಪಿಷಸ್, ಬಾಂಬ್ ಶಬ್ದ, ರನ್ ಮಾಡಿ.",
+      "expected_intent": "Security Threat / Bomb Alarm",
+      "expected_confidence": 0.49,
+      "expected_urgency": 0.96,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_022": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಡ್ರೈವ್ ಮಾಡ್ತಿದ್ದೆ... ಬ್ರಿಡ್ಜ್ ಕ್ರ್ಯಾಕ್! ಕಾರ್ ಫಾಲ್ ರಿಸ್ಕ್!",
+      "expected_intent": "Infrastructure Hazard",
+      "expected_confidence": 0.52,
+      "expected_urgency": 0.78,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_023": {
+      "category": "CONFIRM",
+      "text": "ಮನೆಯಲ್ಲಿ ಗ್ಯಾಸ್ ಸ್ಮೆಲ್ ಸ್ಟ್ರಾಂಗ್, ಸ್ವಲ್ಪ ಲೀಕ್, ಎವಾಕ್ಯುಯೇಟ್.",
+      "expected_intent": "Hazardous Gas Leak",
+      "expected_confidence": 0.53,
+      "expected_urgency": 0.82,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_024": {
+      "category": "CONFIRM",
+      "text": "ಪೂಲ್‌ನಲ್ಲಿ ಕಿಡ್ ಫಾಲ್, ನೀರು ಡೀಪ್, ಪುಲ್ ಔಟ್ ಬೇಕು.",
+      "expected_intent": "Water Rescue - Child",
+      "expected_confidence": 0.46,
+      "expected_urgency": 0.90,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_025": {
+      "category": "CONFIRM",
+      "text": "ಸ್ವಲ್ಪ ಫೇಸ್ ಸ್ವೆಲ್, ಅಲರ್ಜಿ ರಿಯಾಕ್ಷನ್, ಥ್ರೋಟ್ ಟೈಟ್.",
+      "expected_intent": "Anaphylaxis Risk",
+      "expected_confidence": 0.50,
+      "expected_urgency": 0.88,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_026": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಜಾಗಿಂಗ್ ಮಾಡ್ತಿದ್ದೆ... ಅಟ್ಯಾಕ್! ಸ್ನೇಕ್ ಬೈಟ್! ಪಾಯಿಸನ್!",
+      "expected_intent": "Venomous Animal Attack",
+      "expected_confidence": 0.43,
+      "expected_urgency": 0.94,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_027": {
+      "category": "CONFIRM",
+      "text": "ಹೈವೇಯಲ್ಲಿ ಪೈಲಪ್, ಕಾರುಗಳು ಸ್ಮ್ಯಾಶ್, ಫೈರ್ ಕ್ಯಾಚ್.",
+      "expected_intent": "Multi-Vehicle Pileup",
+      "expected_confidence": 0.57,
+      "expected_urgency": 0.96,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_028": {
+      "category": "CONFIRM",
+      "text": "ಚಿನ್ನ ಹೆಡ್‌ಎಕ್, ಸ್ಟ್ರೋಕ್ ಸಿಮ್ಪ್ಟಮ್ಸ್, ಸ್ಪೀಚ್ ಸ್ಲೋ.",
+      "expected_intent": "Understated Stroke Symptoms",
+      "expected_confidence": 0.49,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_029": {
+      "category": "CONFIRM",
+      "text": "ರಸ್ತೆಯಲ್ಲಿ ಟ್ರೀ ಫಾಲ್, ಪವರ್ ಲೈನ್ ಸ್ಪಾರ್ಕ್, ಡೇಂಜರ್.",
+      "expected_intent": "Electrical Hazard",
+      "expected_confidence": 0.56,
+      "expected_urgency": 0.60,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_030": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಟಿವಿ ವಾಚ್ ಮಾಡ್ತಿದ್ದೆ... ಗ್ಯಾಸ್ ಲೀಕ್! ಹೆಡ್‌ಎಕ್ ಆಲ್ಲ!",
+      "expected_intent": "Gas Leak Exposure",
+      "expected_confidence": 0.47,
+      "expected_urgency": 0.82,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_031": {
+      "category": "CONFIRM",
+      "text": "ಮಾರ್ಕೆಟ್‌ನಲ್ಲಿ ಫೈಟ್, ನೈಫ್ ಔಟ್, ಬ್ಲಡ್ ಫ್ಲೋರ್.",
+      "expected_intent": "Active Armed Assault",
+      "expected_confidence": 0.41,
+      "expected_urgency": 0.92,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_032": {
+      "category": "CONFIRM",
+      "text": "ಸ್ವಲ್ಪ ಮಗ್ಗಿಂಗ್, ವಾಲೆಟ್ ಗೋನ್, ಹೆಡ್ ಹಿಟ್ ಹಾರ್ಡ್.",
+      "expected_intent": "Understated Violent Robbery",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_033": {
+      "category": "CONFIRM",
+      "text": "ಕಿಚನ್ ಸ್ಟೋವ್ ಸ್ಮೋಕ್ ಲಿಟಲ್, ಹೌಸ್ ಫಿಲ್ ಆಗ್ತೆ.",
+      "expected_intent": "Structure Fire Risk",
+      "expected_confidence": 0.53,
+      "expected_urgency": 0.75,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_034": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಮಾರ್ಕೆಟ್ ಹೋಗ್ತಿದ್ದೆ... ರೈಯಟ್! ಸ್ಟೋನ್ಸ್ ಪೆಲ್!",
+      "expected_intent": "Civil Unrest",
+      "expected_confidence": 0.47,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_035": {
+      "category": "CONFIRM",
+      "text": "ಕಾರ್ ಇಂಜಿನ್ ಫೈರ್ ಸ್ವಲ್ಪ, ಎಕ್ಸ್‌ಪ್ಲೋಡ್ ರಿಸ್ಕ್.",
+      "expected_intent": "Vehicle Fire",
+      "expected_confidence": 0.53,
+      "expected_urgency": 0.79,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_036": {
+      "category": "CONFIRM",
+      "text": "ಡಾಕ್ಟರ್ ಕಾಲ್ ವೇಟ್, ಲೇಬರ್ ಪೈನ್ ಸ್ಟಾರ್ಟ್, ಬೇಬಿ ಕಮ್.",
+      "expected_intent": "Obstetric Emergency",
+      "expected_confidence": 0.58,
+      "expected_urgency": 0.70,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_037": {
+      "category": "CONFIRM",
+      "text": "ರಸ್ತೆಯಲ್ಲಿ ವೈಟ್ ವ್ಯಾನ್ ಸಸ್ಪಿಷಸ್, ಕಿಡ್ನ್ಯಾಪ್ ಶಂಕೆ.",
+      "expected_intent": "Child Safety Threat",
+      "expected_confidence": 0.49,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_038": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಹೋಟೆಲ್ ಡಿನ್ನರ್... ಪಾಯಿಸನ್! ಸ್ಟಮಕ್ ಪೈನ್ ಕಿಲ್!",
+      "expected_intent": "Acute Poisoning",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.93,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_039": {
+      "category": "CONFIRM",
+      "text": "ಫ್ಯಾಕ್ಟರಿ ಸ್ಮೋಕ್ ಥಿಕ್, ಬ್ರೀತ್ ಕಷ್ಟ, ಶಟ್‌ಡೌನ್.",
+      "expected_intent": "Toxic Inhalation / Industrial Hazard",
+      "expected_confidence": 0.49,
+      "expected_urgency": 0.88,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_040": {
+      "category": "CONFIRM",
+      "text": "ಸ್ವಲ್ಪ ಆಗಿನಲ್ಲಿ ರಿವರ್ ಸೈಡ್, ಫ್ಲಡ್ ಸ್ವೀಪ್, ಹೆಲ್ಪ್.",
+      "expected_intent": "Water Rescue",
+      "expected_confidence": 0.45,
+      "expected_urgency": 0.90,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_041": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಬಸ್‌ನಲ್ಲಿ... ಡೆರೇಲ್! ಟ್ರ್ಯಾಪ್ಡ್ ಇನ್‌ಸೈಡ್!",
+      "expected_intent": "Transit Disaster",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.98,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_042": {
+      "category": "CONFIRM",
+      "text": "ಮನೆಯಲ್ಲಿ ಇಂಟ್ರೂಡರ್ ಸೌಂಡ್, ಡೋರ್ ಬ್ರೇಕ್, ಲಾಕ್.",
+      "expected_intent": "Home Invasion",
+      "expected_confidence": 0.44,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_043": {
+      "category": "CONFIRM",
+      "text": "ಚಿನ್ನ ಬರ್ನ್ ಸ್ಟೋವ್‌ನಿಂದ, ಸ್ಕಿನ್ ಮೆಲ್ಟ್, ಪೈನ್ ಬಹುತ್.",
+      "expected_intent": "Understated Severe Burn",
+      "expected_confidence": 0.55,
+      "expected_urgency": 0.92,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_044": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ಶಾಲೆ ಬಸ್... ಕ್ರ್ಯಾಶ್! ಕಿಡ್ಸ್ ಇಂಜುರ್ಡ್!",
+      "expected_intent": "Child Transit Accident",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.95,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_045": {
+      "category": "CONFIRM",
+      "text": "ಪಾರ್ಕ್‌ನಲ್ಲಿ ಡಾರ್ಕ್, ಗೂನ್ಸ್ ಸೌಂಡ್, ಫಿಯರ್ ಹೈ.",
+      "expected_intent": "Personal Safety Threat",
+      "expected_confidence": 0.40,
+      "expected_urgency": 0.60,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_046": {
+      "category": "CONFIRM",
+      "text": "ಸ್ವಲ್ಪ ವಾಯು ದೂಷಣೆ, ಕಫ್ ತುಂಬಾ, ಬ್ರೀತ್ ಸ್ಟಾಪ್.",
+      "expected_intent": "Respiratory Distress",
+      "expected_confidence": 0.48,
+      "expected_urgency": 0.80,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_047": {
+      "category": "CONFIRM",
+      "text": "ನಾನು ರೈಡ್ ಮಾಡ್ತಿದ್ದೆ... ಎಲೆಕ್ಟ್ರಾಕ್ಯೂಷನ್! ಶಾಕ್!",
+      "expected_intent": "Active Electrocution",
+      "expected_confidence": 0.41,
+      "expected_urgency": 0.99,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_048": {
+      "category": "CONFIRM",
+      "text": "ಹಾಸ್ಪಿಟಲ್ ವೇಟ್ ಲಾಂಗ್, ಪೇಷೆಂಟ್ ವರ್ಸ್, ಎಮರ್ಜೆನ್ಸಿ.",
+      "expected_intent": "Critical Care Access",
+      "expected_confidence": 0.60,
+      "expected_urgency": 0.85,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_049": {
+      "category": "CONFIRM",
+      "text": "ರಸ್ತೆಯಲ್ಲಿ ಬಾಂಬ್ ಥ್ರೆಟ್ ಕಾಲ್, ಎವಾಕ್ಯುಯೇಷನ್ ಬೇಕು.",
+      "expected_intent": "Terrorism Response",
+      "expected_confidence": 0.50,
+      "expected_urgency": 1.00,
+      "expected_decision": "CONFIRM"
+    },
+    "BATCH_K3_050": {
+      "category": "CONFIRM",
+      "text": "ಸ್ವಲ್ಪ ಡೂಂಗಿಂಗ್ ಪೂಲ್, ಚೈಲ್ಡ್ ಟ್ರ್ಯಾಪ್ಡ್, ರೆಸ್ಕ್ಯೂ.",
+      "expected_intent": "Water Rescue - Child",
+      "expected_confidence": 0.42,
+      "expected_urgency": 0.99,
+      "expected_decision": "CONFIRM"
+    }
+  }
+}

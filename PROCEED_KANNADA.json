@@ -1,0 +1,404 @@
+{
+  "simulated_calls": {
+    "BATCH_K3_PROCEED_001": {
+      "category": "CLEAR",
+      "text": "ನಮ್ಮ ರಸ್ತೆಯಲ್ಲಿ ಪೊಥೋಲ್ಸ್ ತುಂಬಾ, ಕಾರ್ ಶೇಕ್ ಆಗುತ್ತೆ, BBMP ರಿಪೇರ್ ಮಾಡಿ.",
+      "expected_intent": "Civic Issue - Potholes",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_002": {
+      "category": "CLEAR",
+      "text": "ಬೀದಿ ಲೈಟ್ ಆಫ್ ಆಗಿವೆ ಎಲ್ಲಾ, ರಾತ್ರಿ ಡಾರ್ಕ್, ಕಾರ್ಪೊರೇಷನ್ ಚೆಕ್ ಮಾಡಿ.",
+      "expected_intent": "Civic Issue - Streetlights",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_003": {
+      "category": "CLEAR",
+      "text": "ಕಸ್ ಡಂಪ್ ರಸ್ತೆ ಬದಿ, ವಾಸನೆ ಬರುತ್ತೆ, ಕ್ಲೀನಿಂಗ್ ಟೀಮ್ ಕಳುಹಿಸಿ.",
+      "expected_intent": "Civic Issue - Sanitation",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_004": {
+      "category": "CLEAR",
+      "text": "ಡ್ರೈನ್ ಬ್ಲಾಕ್, ನೀರು ಸ್ಟ್ಯಾಗ್, ಮಳೆ ಬಂದ್ರೆ ಪ್ರಾಬ್ಲಮ್, ಕ್ಲೀನ್ ಮಾಡಿ.",
+      "expected_intent": "Civic Issue - Drainage",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_005": {
+      "category": "CLEAR",
+      "text": "ಪಾರ್ಕ್ ಬೆಂಚ್ ಬ್ರೋಕನ್, ಕುಳಿತು ಇಲ್ಲ, ರಿಪೇರ್ ವರ್ಕ್ ಸ್ಟಾರ್ಟ್.",
+      "expected_intent": "Civic Issue - Park Maintenance",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_006": {
+      "category": "CLEAR",
+      "text": "ನೀರು ಸಪ್ಲೈ ಕಟ್ ಎರಡು ದಿನ, ಟ್ಯಾಂಕರ್ ಆರ್ಡರ್ ದಯವಿಟ್ಟು.",
+      "expected_intent": "Utility Issue - Water Outage",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_007": {
+      "category": "CLEAR",
+      "text": "ಎಲೆಕ್ಟ್ರಿಸಿಟಿ ಬಿಲ್ ವ್ರಾಂಗ್ ಯೂನಿಟ್, ಎಕ್ಸ್‌ಟ್ರಾ ಚಾರ್ಜ್, KEB ಕಾರ್ಯಾಲಯ.",
+      "expected_intent": "Utility Billing Dispute",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_008": {
+      "category": "CLEAR",
+      "text": "ಇಂಟರ್ನೆಟ್ ಸ್ಪೀಡ್ ಸ್ಲೋ ತುಂಬಾ, ವರ್ಕ್ ಡಿಲೇ, Jio ಫೈಬರ್ ಚೆಕ್.",
+      "expected_intent": "Utility Complaint - Internet",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.02,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_009": {
+      "category": "CLEAR",
+      "text": "ಬಸ್ ಟೈಮ್‌ಟೇಬಲ್ ಲೇಟ್ ಎಲ್ಲಾ ಡೇ, ಆಫೀಸ್ ಲೇಟ್, BMTC ಇಂಪ್ರೂವ್.",
+      "expected_intent": "Public Transport Complaint",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_010": {
+      "category": "CLEAR",
+      "text": "ಆಟೋ ಮೀಟರ್ ಹಾಕಲ್ಲ, ಜಾಸ್ತಿ ಫೇರ್, RTO ಕಂಪ್ಲೈಂಟ್ ಫೈಲ್.",
+      "expected_intent": "Transport Complaint - Overcharging",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_011": {
+      "category": "CLEAR",
+      "text": "ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್ ಫ್ಲಿಕರ್, ಜ್ಯಾಮ್ ತುಂಬಾ, ರಿಪೇರ್ ಮಾಡಿ.",
+      "expected_intent": "Civic Issue - Traffic Signal",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.25,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_012": {
+      "category": "CLEAR",
+      "text": "ಪಾರ್ಕ್ ಕಸ ತುಂಬಾ, ಸೊಳ್ಳೆಗಳು, ಫಾಗಿಂಗ್ ಸ್ಪ್ರೇ ಮಾಡಿ.",
+      "expected_intent": "Public Health - Pest Control",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_013": {
+      "category": "CLEAR",
+      "text": "ನೈಟ್ ಬಾರ್ ನಾಯ್ಸ್, ಸ್ಲೀಪ್ ಡಿಸ್ಟರ್ಬ್, ಪೊಲೀಸ್ ಪ್ಯಟ್ರೋಲ್.",
+      "expected_intent": "Noise Complaint",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_014": {
+      "category": "CLEAR",
+      "text": "ಮಾರ್ಕೆಟ್ ಓವರ್ ಪ್ರೈಸ್ ವೆಜ್, ಕನ್ಸ್ಯೂಮರ್ ಫೋರಂ ಕೇಸ್.",
+      "expected_intent": "Consumer Complaint - Overpricing",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_015": {
+      "category": "CLEAR",
+      "text": "ಶಾಲೆ ಬಸ್ ಸ್ಪೀಡ್ ಹೈ, ಸೇಫ್ಟಿ ಹೆಲ್ಮೆಟ್ ಇಲ್ಲ, ರೂಲ್ ಎನ್‌ಫೋರ್ಸ್.",
+      "expected_intent": "Public Transport Safety",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.30,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_016": {
+      "category": "CLEAR",
+      "text": "ಹೋಟೆಲ್ ಫುಡ್ ಸ್ಟೇಲ್, ಸ್ಟಮಕ್ ಅಪ್‌ಸೆಟ್, FSSAI ಇನ್‌ಸ್ಪೆಕ್ಟ್.",
+      "expected_intent": "Food Safety Complaint",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.35,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_017": {
+      "category": "CLEAR",
+      "text": "ಸ್ಟ್ರೇ ಡಾಗ್ಸ್ ಗ್ರೂಪ್ ಬಾರ್ಕ್, ನೈಟ್ ಡಿಸ್ಟರ್ಬ್, ಕ್ಯಾಚ್ ಮಾಡಿ.",
+      "expected_intent": "Civic Issue - Animal Control",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.30,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_018": {
+      "category": "CLEAR",
+      "text": "ಲೈಬ್ರರಿ ಬುಕ್ ಡ್ಯೂ ಫೈನ್ ಹೈ, ಸ್ಟುಡೆಂಟ್ ಕಂಪ್ಲೈನ್.",
+      "expected_intent": "Public Facility Complaint",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_019": {
+      "category": "CLEAR",
+      "text": "ಕಾಲೇಜು ಫೀ ಸ್ಟ್ರಕ್ಚರ್ ಚೇಂಜ್, ಪಾರೆಂಟ್ಸ್ ಅಂಗ್ರಿ, UGC ನೋಟಿಸ್.",
+      "expected_intent": "Educational Institution Complaint",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_020": {
+      "category": "CLEAR",
+      "text": "ಪೋಸ್ಟ್ ಪಾರ್ಸಲ್ ಲಾಸ್ಟ್, ಟ್ರ್ಯಾಕ್ ನಾಟ್ ವರ್ಕ್, ರೀಫಂಡ್.",
+      "expected_intent": "Postal Service Complaint",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_021": {
+      "category": "CLEAR",
+      "text": "ಫಾರ್ಮ್ ವಾಟರ್ ಕೆನಾಲ್ ಬ್ಲಾಕ್, ಕ್ರಾಪ್ ಡ್ಯಾಮೇಜ್, ಇರಿಗೇಷನ್.",
+      "expected_intent": "Agricultural Utility Request",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.30,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_022": {
+      "category": "CLEAR",
+      "text": "ಸ್ಲಮ್ ರಸ್ತೆ ಲೈಟ್ ಇಲ್ಲ, ಕಿಡ್ಸ್ ಪ್ಲೇ ಸೇಫ್ ಅಲ್ಲ.",
+      "expected_intent": "Civic Issue - Streetlights",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.25,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_023": {
+      "category": "CLEAR",
+      "text": "ಸಿನೆಮಾ ಟಿಕೆಟ್ ಬ್ಲ್ಯಾಕ್ ಮಾರ್ಕೆಟ್, ಪ್ರೈಸ್ ಹೈ, ಪೊಲೀಸ್.",
+      "expected_intent": "Illegal Ticket Sales",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_024": {
+      "category": "CLEAR",
+      "text": "ಶಾಪ್ ಫೇಕ್ ಮಿಲ್ಕ್ ಪೌಡರ್, ಕಿಡ್ಸ್ ಹೆಲ್ತ್, ಫುಡ್ ಇನ್‌ಸ್ಪೆಕ್ಟರ್.",
+      "expected_intent": "Consumer Protection",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_025": {
+      "category": "CLEAR",
+      "text": "ರಿಕ್ಷಾ ಸ್ಟ್ಯಾಂಡ್ ಫೈಟ್, ಪ್ಯಾಸೆಂಜರ್ಸ್ ವೇಟ್, ಟ್ರಾಫಿಕ್ ಕಂಟ್ರೋಲ್.",
+      "expected_intent": "Public Nuisance Complaint",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_026": {
+      "category": "CLEAR",
+      "text": "ಬ್ರಿಡ್ಜ್ ಪೈಂಟ್ ಪೀಲ್, ಸೇಫ್ಟಿ ಸೈನ್ ಇಲ್ಲ, PWD ಮೆಯಿಂಟೇನ್.",
+      "expected_intent": "Infrastructure Maintenance",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.25,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_027": {
+      "category": "CLEAR",
+      "text": "ಫೆಸ್ಟಿವಲ್ ಲೈಟ್ ವೈರಿಂಗ್ ಲೂಸ್, ಶಾಕ್ ರಿಸ್ಕ್, ಫಿಕ್ಸ್.",
+      "expected_intent": "Hazardous Condition - Electrical",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_028": {
+      "category": "CLEAR",
+      "text": "ಹಾಸ್ಟೆಲ್ ವಾಟರ್ ಕ್ವಾಲಿಟಿ ಬ್ಯಾಡ್, ಸ್ಟುಡೆಂಟ್ಸ್ ಕಾಂಬ್, ಚೇಂಜ್.",
+      "expected_intent": "Institutional Utility Complaint",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_029": {
+      "category": "CLEAR",
+      "text": "ರೈಲ್ವೇ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಕ್ಲೀನ್ ಇಲ್ಲ, ಪ್ಯಾಸೆಂಜರ್ಸ್ ಕಂಪ್ಲೈನ್.",
+      "expected_intent": "Public Transit Sanitation",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_030": {
+      "category": "CLEAR",
+      "text": "ಮಾರ್ಕೆಟ್ ಪಾರ್ಕಿಂಗ್ ಚಾರ್ಜ್ ಹೈ, ಸ್ಪೇಸ್ ಕಡಿಮೆ, BMC ಲಾಟ್.",
+      "expected_intent": "Civic Issue - Parking",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_031": {
+      "category": "CLEAR",
+      "text": "ಡಾಕ್ಟರ್ ಅಪಾಯಿಂಟ್‌ಮೆಂಟ್ ವೇಟ್ ಲಾಂಗ್, ಪೇಷೆಂಟ್ ಕನ್ವೀನಿಯೆನ್ಸ್.",
+      "expected_intent": "Medical Service Delay",
+      "expected_confidence": 0.88,
+      "expected_urgency": 0.30,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_032": {
+      "category": "CLEAR",
+      "text": "ವೋಟರ್ ಐಡಿ ಕಾರ್ಡ್ ಡ್ಯೂಪ್ಲಿಕೇಟ್, EC ವೆರಿಫೈ.",
+      "expected_intent": "Electoral Fraud Report",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_033": {
+      "category": "CLEAR",
+      "text": "ಫ್ಯಾಕ್ಟರಿ ನಾಯ್ಸ್ ಪೊಲ್ಯೂಷನ್, ನೈಬರ್ಸ್ ಹೆಡ್‌ಎಕ್, KSPCB.",
+      "expected_intent": "Environmental Pollution Report",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_034": {
+      "category": "CLEAR",
+      "text": "ಬೀಚ್ ಸ್ಯಾಂಡ್ ಕ್ಲೀನ್ ಇಲ್ಲ, ಟೂರಿಸ್ಟ್ ಕಮ್ ಅಲ್ಲ, ಮೆಯಿಂಟೇನ್.",
+      "expected_intent": "Civic Maintenance - Beach",
+      "expected_confidence": 0.98,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_035": {
+      "category": "CLEAR",
+      "text": "ATM ಕ್ಯೂ ಲಾಂಗ್, ಕ್ಯಾಶ್ ಲಿಮಿಟ್ ಕಡಿಮೆ, ಬ್ಯಾಂಕ್ ಎಕ್ಸ್‌ಪ್ಯಾಂಡ್.",
+      "expected_intent": "Banking Service Complaint",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_036": {
+      "category": "CLEAR",
+      "text": "ಸ್ಟ್ರೀಟ್ ವೆಂಡರ್ ಹೈಜೀನ್ ಪೂರ್, ಫುಡ್ ಪಾಯಿಸನ್ ರಿಸ್ಕ್, ಲೈಸೆನ್ಸ್.",
+      "expected_intent": "Health Code Violation",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_037": {
+      "category": "CLEAR",
+      "text": "ಟ್ರಾಫಿಕ್ ಸೈನ್‌ಬೋರ್ಡ್ ಫೇಡ್, ಡ್ರೈವರ್ ಕನ್ಫ್ಯೂಝನ್, ರಿಪೇರ್.",
+      "expected_intent": "Road Infrastructure Complaint",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_038": {
+      "category": "CLEAR",
+      "text": "ಪಬ್ಲಿಕ್ ಟಾಯ್‌ಲೆಟ್ ವಾಟರ್ ಇಲ್ಲ, ಕ್ಲೀನ್ ಮಾಡಿ.",
+      "expected_intent": "Public Facility Maintenance",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_039": {
+      "category": "CLEAR",
+      "text": "ಶಾಲೆ ಪ್ಲೇಗ್ರೌಂಡ್ ಗ್ರಾಸ್ ಡ್ರೈ, ಕಿಡ್ಸ್ ಪ್ಲೇ ಕಷ್ಟ.",
+      "expected_intent": "Educational Institution Maintenance",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.10,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_040": {
+      "category": "CLEAR",
+      "text": "ಕಾಲೇಜು ವೈಫೈ ಸಿಗ್ನಲ್ ವೀಕ್, ಸ್ಟುಡೆಂಟ್ಸ್ ಕಂಪ್ಲೈನ್.",
+      "expected_intent": "Utility Complaint - Internet",
+      "expected_confidence": 0.97,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_041": {
+      "category": "CLEAR",
+      "text": "ಪೋಸ್ಟ್ ಸ್ಟೇಷನ್ ಸ್ಟ್ಯಾಂಪ್ ಔಟ್ ಆಫ್, ಡಿಲೇ, ಸ್ಟಾಕ್ ರೀಫಿಲ್.",
+      "expected_intent": "Postal Service Complaint",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_042": {
+      "category": "CLEAR",
+      "text": "ಫಾರ್ಮ್ ರಸ್ತೆ ಡಸ್ಟ್ ತುಂಬಾ, ಕ್ರಾಪ್ ಡ್ಯಾಮೇಜ್, ಗ್ರಾವೆಲ್.",
+      "expected_intent": "Agricultural Infrastructure Issue",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_043": {
+      "category": "CLEAR",
+      "text": "ಸ್ಲಮ್ ಎಲೆಕ್ಟ್ರಿಸಿಟಿ ಪೋಲ್ ಲೂಸ್, ವೈರ್ ಡ್ಯಾಂಜರ್, ಫಿಕ್ಸ್.",
+      "expected_intent": "Hazardous Infrastructure - Electrical",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.15,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_044": {
+      "category": "CLEAR",
+      "text": "ಸಿನೆಮಾ ಹಾಲ್ ಸೌಂಡ್ ಹೈ, ಹೆಡ್‌ಎಕ್, ವಾಲ್ಯೂಮ್ ಕಂಟ್ರೋಲ್.",
+      "expected_intent": "Public Nuisance Complaint",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_045": {
+      "category": "CLEAR",
+      "text": "ಶಾಪ್ ವೆಜ್ ಸ್ಕೇಲ್ ತಪ್ಪು, ಓವರ್ ವೇಟ್, ವರಿಫೈ.",
+      "expected_intent": "Consumer Fraud Report",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_046": {
+      "category": "CLEAR",
+      "text": "ರಿಕ್ಷಾ ಫೇರ್ ರೇಟ್ ಲಿಸ್ಟ್ ಔಟ್‌ಡೇಟೆಡ್, ಚಾಲಕರ ಕಂಪ್ಲೈನ್.",
+      "expected_intent": "Transport Policy Issue",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_047": {
+      "category": "CLEAR",
+      "text": "ಬ್ರಿಡ್ಜ್ ರೇಲಿಂಗ್ ರಸ್ಟಿ, ಸೇಫ್ಟಿ ಇಷ್ಯೂ, ಪೇಂಟ್.",
+      "expected_intent": "Infrastructure Hazard",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_048": {
+      "category": "CLEAR",
+      "text": "ಫೆಸ್ಟಿವಲ್ ಪರ್ಮಿಟ್ ಡಿಲೇ, ಸ್ಟಾಲ್ ಸೆಟಪ್ ಕ್ಯಾನ್ಸಲ್.",
+      "expected_intent": "Government Service Delay",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_049": {
+      "category": "CLEAR",
+      "text": "ಹಾಸ್ಟೆಲ್ ವೆಂಟಿಲೇಷನ್ ಪೂರ್, ಹೀಟ್, ಫ್ಯಾನ್ ರಿಪೇರ್.",
+      "expected_intent": "Institutional Facility Complaint",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.20,
+      "expected_decision": "PROCEED"
+    },
+    "BATCH_K3_PROCEED_050": {
+      "category": "CLEAR",
+      "text": "ರೈಲ್ವೇ ಟಿಕೆಟ್ ಕೌಂಟರ್ ಕ್ಯೂ ಲಾಂಗ್, ಆನ್‌ಲೈನ್ ಇಷ್ಯೂ.",
+      "expected_intent": "Public Transit Service Issue",
+      "expected_confidence": 0.92,
+      "expected_urgency": 0.05,
+      "expected_decision": "PROCEED"
+    }
+  }
+}

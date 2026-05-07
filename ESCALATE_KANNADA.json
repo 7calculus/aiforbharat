@@ -1,0 +1,404 @@
+{
+  "simulated_calls": {
+    "BATCH_K3_ESCALATE_001": {
+      "category": "EMERGENCY",
+      "text": "ಹೆದ್ದಾರಿಯಲ್ಲಿ ಟ್ಯಾಂಕರ್ ಕ್ರ್ಯಾಶ್, ಫ್ಯೂಲ್ ಲೀಕ್ ಫೈರ್, ೨೦ ಕಾರುಗಳು ಸಿಲುಕಿ, ಅಂಬುಲೆನ್ಸ್ ೧೦ ಬೇಗ!",
+      "expected_intent": "Hazmat Vehicle Explosion / Mass Casualty",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_002": {
+      "category": "EMERGENCY",
+      "text": "ಬಿಲ್ಡಿಂಗ್ ಕೊಲಾಪ್ಸ್ ಆಗಿದೆ, ೧೦೦ ಜನರು ಟ್ರ್ಯಾಪ್ಡ್, ಎನ್‌ಡಿಆರ್‌ಎಫ್ ರೆಸ್ಕ್ಯೂ ಅರ್ಜೆಂಟ್!",
+      "expected_intent": "Major Structural Collapse / Entrapment",
+      "expected_confidence": 0.94,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_003": {
+      "category": "EMERGENCY",
+      "text": "ಪ್ಲೇನ್ ಕ್ರ್ಯಾಶ್ ಏರ್‌ಪೋರ್ಟ್ ರನ್‌ವೇ, ಪ್ಯಾಸೆಂಜರ್ಸ್ ೧೫೦, ಫೈರ್ ಫೈಟರ್ಸ್ ಬನ್ನಿ!",
+      "expected_intent": "Aviation Disaster",
+      "expected_confidence": 0.97,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_004": {
+      "category": "EMERGENCY",
+      "text": "ಮೆಟ್ರೋ ಟ್ರೈನ್ ಡೆರೇಲ್, ರೈಲ್ ಉಲ್ಟು, ಪೀಪಲ್ ಹ್ಯಾಂಗಿಂಗ್, ರೆಸ್ಕ್ಯೂ ಕ್ರೇನ್!",
+      "expected_intent": "Mass Transit Disaster",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_005": {
+      "category": "EMERGENCY",
+      "text": "ಫ್ಲಡ್ ವಾಟರ್ ಲೆವಲ್ ಹೈ, ೩೦೦ ಗ್ರಾಮಸ್ಥರು ಸಿಲುಕಿ, ಹೆಲಿಕಾಪ್ಟರ್ ಎವಾಕ್ಯುಯೇಷನ್!",
+      "expected_intent": "Mass Flood Rescue",
+      "expected_confidence": 0.92,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_006": {
+      "category": "EMERGENCY",
+      "text": "ಎದೆಯಲ್ಲಿ ಟೈಟ್ ಪೈನ್, ಬ್ರೀತ್ ಸ್ಟಾಪ್, ಹಾರ್ಟ್ ಅಟ್ಯಾಕ್, ೧೦೮ ಅಂಬುಲೆನ್ಸ್ ನೌ!",
+      "expected_intent": "Active Cardiac Arrest",
+      "expected_confidence": 0.98,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_007": {
+      "category": "EMERGENCY",
+      "text": "ಶೂಟಿಂಗ್ ಸ್ಟ್ರೀಟ್‌ನಲ್ಲಿ, ಗನ್‌ಮ್ಯಾನ್ ಫೈರಿಂಗ್, ೫ ಡೌನ್, ಸ್ವಾಟ್ ಟೀಮ್ ಇಮೀಡಿಯಟ್!",
+      "expected_intent": "Active Shooter Situation",
+      "expected_confidence": 0.93,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_008": {
+      "category": "EMERGENCY",
+      "text": "ಬ್ಲಡ್ ಹ್ಯಾಂಡ್‌ನಿಂದ ನಾನ್‌ಸ್ಟಾಪ್, ಆರ್ಟರಿ ಕಟ್, ಟೂರ್ನಿಕ್ವೆಟ್ ಅಂಬುಲೆನ್ಸ್!",
+      "expected_intent": "Severe Hemorrhage / Artery Laceration",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_009": {
+      "category": "EMERGENCY",
+      "text": "ರೇಪ್ ಅಟ್ಯಾಕ್ ನಡೆಯ್ತಿದೆ, ವಿಕ್ಟಿಮ್ ಕ್ರೈ, ಅಟ್ಯಾಕರ್ ರೂಮ್‌ನಲ್ಲಿ, ಪೊಲೀಸ್ ರೇಡ್!",
+      "expected_intent": "Active Sexual Assault",
+      "expected_confidence": 0.91,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_010": {
+      "category": "EMERGENCY",
+      "text": "ಮಾಲ್ ಬಾಂಬ್ ಟಿಕ್ಕಿಂಗ್, ೫೦೦ ಶಾಪರ್ಸ್, ಬಾಂಬ್ ಸ್ಕ್ವಾಡ್ ಎವಾಕ್ಯುಯೇಟ್!",
+      "expected_intent": "Active Bomb Threat / Mass Evacuation",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_011": {
+      "category": "EMERGENCY",
+      "text": "ಗ್ಯಾಸ್ ಎಕ್ಸ್‌ಪ್ಲೋಷನ್ ಅಪಾರ್ಟ್‌ಮೆಂಟ್, ೩ ಫ್ಲೋರ್ಸ್ ಬರ್ನಿಂಗ್, ಫೈರ್ ಎಂಜಿನ್!",
+      "expected_intent": "Structure Fire / Explosion",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_012": {
+      "category": "EMERGENCY",
+      "text": "ಕಿಡ್ನ್ಯಾಪರ್ ಚೈಲ್ಡ್ ವ್ಯಾನ್‌ನಲ್ಲಿ ಡ್ರೈವ್, ನಂಬರ್ MH04AB1234, ಪೊಲೀಸ್ ಚೇಸ್!",
+      "expected_intent": "Active Kidnapping / Vehicle Chase",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_013": {
+      "category": "EMERGENCY",
+      "text": "ಆಸಿಡ್ ಥ್ರೋನ್ ಫೇಸ್ ಮೇಲೆ, ಸ್ಕಿನ್ ಮೆಲ್ಟ್, ವಿಕ್ಟಿಮ್ ಸ್ಕ್ರೀಮ್, ಅಂಬುಲೆನ್ಸ್!",
+      "expected_intent": "Acid Attack Trauma",
+      "expected_confidence": 0.97,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_014": {
+      "category": "EMERGENCY",
+      "text": "ಟೈಗರ್ ಎಂಟರ್ ವಿಲೇಜ್, ೨ ಅಟ್ಯಾಕ್ಡ್, ಫಾರೆಸ್ಟ್ ಗನ್‌ಮ್ಯಾನ್ ಟ್ರ್ಯಾಪ್!",
+      "expected_intent": "Wild Animal Attack",
+      "expected_confidence": 0.90,
+      "expected_urgency": 0.96,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_015": {
+      "category": "EMERGENCY",
+      "text": "ಸ್ಟ್ರೋಕ್ ಫೇಸ್ ನಮ್ಬ್, ಸ್ಪೀಚ್ ಗೋನ್, ಟೈಮ್ ಕ್ರಿಟಿಕಲ್, ೧೦೮ ರಶ್!",
+      "expected_intent": "Active Stroke Symptoms",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_016": {
+      "category": "EMERGENCY",
+      "text": "ಮ್ಯಾಸ್ ಶೂಟಿಂಗ್ ಕಾಲೇಜು, ೧೨ ಸ್ಟುಡೆಂಟ್ಸ್ ಡೌನ್, ಲಾಕ್‌ಡೌನ್ ಸ್ವಾಟ್!",
+      "expected_intent": "Active School Shooting",
+      "expected_confidence": 0.98,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_017": {
+      "category": "EMERGENCY",
+      "text": "ಟ್ಸುನಾಮಿ ವೇವ್ ಕೋಸ್ಟ್ ಹಿಟ್, ಎವಾಕ್ಯುಯೇಷನ್ ಹೈ ಗ್ರೌಂಡ್, ಸೈರನ್!",
+      "expected_intent": "Tsunami Natural Disaster",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_018": {
+      "category": "EMERGENCY",
+      "text": "ಕಾರ್ಬನ್ ಮೊನಾಕ್ಸೈಡ್ ಫ್ಯಾಮಿಲಿ ಫೈಂಟ್, ವಿಂಡೋ ಬ್ರೇಕ್ ಆಕ್ಸಿಜನ್!",
+      "expected_intent": "Toxic Gas Poisoning / Mass Fainting",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_019": {
+      "category": "EMERGENCY",
+      "text": "ಲ್ಯಾಂಡ್‌ಸ್ಲೈಡ್ ೫೦ ಕಾರುಗಳು ಬರಿಯು, JCB ರೆಸ್ಕ್ಯೂ ಡಿಗ್!",
+      "expected_intent": "Mass Landslide Burial",
+      "expected_confidence": 0.93,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_020": {
+      "category": "EMERGENCY",
+      "text": "ಸೀಜರ್ ಬಾಡಿ ಶೇಕ್ ವೈಲೆಂಟ್, ಫಾಲ್ ರಿಸ್ಕ್, ಮೆಡಿಕಲ್ ಹೆಲ್ಪ್!",
+      "expected_intent": "Active Seizure",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.92,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_021": {
+      "category": "EMERGENCY",
+      "text": "ಬಾಂಬ್ ಬ್ಲಾಸ್ಟ್ ಮಾರ್ಕೆಟ್, ೨೫ ಕ್ಯಾಜುಯಲ್ಟೀಸ್, ಟ್ರಾಮಾ ಅಂಬುಲೆನ್ಸ್!",
+      "expected_intent": "Explosion Event / Mass Trauma",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_022": {
+      "category": "EMERGENCY",
+      "text": "ಹಾರ್ಟ್ ಅರೆಸ್ಟ್ ಪಬ್ಲಿಕ್, CPR ಡಿಫಿಬ್ರಿಲೇಟರ್ ಅಂಬುಲೆನ್ಸ್!",
+      "expected_intent": "Public Cardiac Arrest",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_023": {
+      "category": "EMERGENCY",
+      "text": "ಕೆಮಿಕಲ್ ಸ್ಪಿಲ್ ಫ್ಯಾಕ್ಟರಿ, ೪೦ ವರ್ಕರ್ಸ್ ಬರ್ನ್ಸ್, ಹ್ಯಾಝ್‌ಮ್ಯಾಟ್!",
+      "expected_intent": "Industrial Hazardous Exposure",
+      "expected_confidence": 0.95,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_024": {
+      "category": "EMERGENCY",
+      "text": "ಬ್ರಿಡ್ಜ್ ಕೊಲಾಪ್ಸ್ ೨೦ ವೆಹಿಕಲ್ಸ್ ರಿವರ್, ಡೈವರ್ಸ್ ಕ್ರೇನ್!",
+      "expected_intent": "Structural Failure / Water Rescue",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_025": {
+      "category": "EMERGENCY",
+      "text": "ರ್ಯಾಬೀಸ್ ಡಾಗ್ ಪ್ಯಾಕ್ ೮ ಕಿಡ್ಸ್ ಬೈಟ್, ಆಂಟಿ-ರ್ಯಾಬೀಸ್ ಇಂಜೆಕ್ಷನ್!",
+      "expected_intent": "Mass Animal Attack",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.96,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_026": {
+      "category": "EMERGENCY",
+      "text": "ನ್ಯೂಕ್ಲಿಯರ್ ಲೀಕ್ ಟ್ರಕ್ ಕ್ರ್ಯಾಶ್, ರೇಡಿಯೇಷನ್ ಎಕ್ಸ್‌ಪೋಸ್ಡ್, ಐಓಡೀನ್!",
+      "expected_intent": "Radiological Emergency",
+      "expected_confidence": 0.97,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_027": {
+      "category": "EMERGENCY",
+      "text": "ಪ್ಲೇನ್ ಎಂಜಿನ್ ಫೈಲ್, ಎಮರ್ಜೆನ್ಸಿ ಲ್ಯಾಂಡಿಂಗ್, ಫೋಮ್ ರೆಡಿ!",
+      "expected_intent": "Aviation Emergency",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_028": {
+      "category": "EMERGENCY",
+      "text": "ರೈಯಟ್ ೨೦೦ ಜನರು, ಸ್ಟೋನ್ಸ್ ಫೈರ್, ಲಥಿ ಟಿಯರ್ ಗ್ಯಾಸ್!",
+      "expected_intent": "Civil Unrest / Riot",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.95,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_029": {
+      "category": "EMERGENCY",
+      "text": "ಹೈಪೊಥರ್ಮಿಯಾ ಮೌಂಟನ್ ಟ್ರೆಕ್, ಬಾಡಿ ಫ್ರೀಜ್, ವಾರ್ಮ್ ರೆಸ್ಕ್ಯೂ!",
+      "expected_intent": "Severe Environmental Medical",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.92,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_030": {
+      "category": "EMERGENCY",
+      "text": "ಗ್ಯಾಸ್ ಸ್ಟೇಶನ್ ಬೂಮ್, ಫೈರ್‌ಬಾಲ್, ೧೦ ಫೈರ್ ಟ್ರಕ್ಸ್!",
+      "expected_intent": "Gas Station Explosion",
+      "expected_confidence": 0.97,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_031": {
+      "category": "EMERGENCY",
+      "text": "ಎಲ್ಡರ್ಲಿ ಫಾಲ್ ಕ್ಲಿಫ್, ಹಿಪ್ ಫ್ರ್ಯಾಕ್ಚರ್, ಹೆಲಿಕಾಪ್ಟರ್!",
+      "expected_intent": "Trauma Medical / Rescue",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.85,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_032": {
+      "category": "EMERGENCY",
+      "text": "ಸೈಬರ್ ಅಟ್ಯಾಕ್ ICU, ವೆಂಟಿಲೇಟರ್ ಫೇಲ್, IT ಬ್ಯಾಕಪ್!",
+      "expected_intent": "Critical Infrastructure Cyber Attack",
+      "expected_confidence": 0.89,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_033": {
+      "category": "EMERGENCY",
+      "text": "ಮ್ಯಾಸ್ ಡ್ರೌನಿಂಗ್ ಫೆಸ್ಟಿವಲ್, ೩೫ ಡೌನ್, ಡೈವರ್ ಬೋಟ್!",
+      "expected_intent": "Mass Drowning Incident",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_034": {
+      "category": "EMERGENCY",
+      "text": "ಟೆರರ್ ಅಟ್ಯಾಕ್ ಟೆಂಪಲ್, ಗನ್‌ಮ್ಯಾನ್ ಯೂ, ಸ್ವಾಟ್!",
+      "expected_intent": "Active Terrorist Assault",
+      "expected_confidence": 0.88,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_035": {
+      "category": "EMERGENCY",
+      "text": "ಶಿಪ್ ಸಿಂಕ್ ಪೋರ್ಟ್, ೫೦ ಕ್ರೂ, ಕೋಸ್ಟ್ ಗಾರ್ಡ್!",
+      "expected_intent": "Maritime Disaster",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_036": {
+      "category": "EMERGENCY",
+      "text": "ಅರ್ಥ್‌ಕ್ವೇಕ್ ೭.೨, ಬಿಲ್ಡಿಂಗ್ಸ್ ಡೌನ್, ಎನ್‌ಡಿಆರ್‌ಎಫ್!",
+      "expected_intent": "Massive Earthquake Disaster",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_037": {
+      "category": "EMERGENCY",
+      "text": "ಫುಡ್ ಪಾಯಿಸನಿಂಗ್ ೩೦೦ ವೆಡ್ಡಿಂಗ್, IV ಫ್ಲೂಯಿಡ್ಸ್!",
+      "expected_intent": "Mass Food Poisoning",
+      "expected_confidence": 0.93,
+      "expected_urgency": 0.88,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_038": {
+      "category": "EMERGENCY",
+      "text": "ಹಾರ್ಟ್ ಅರೆಸ್ಟ್ ಸ್ಟೇಡಿಯಂ, ೫೦,೦೦೦ ಕ್ರೌಡ್, ಡಿಫಿಬ್!",
+      "expected_intent": "Public Cardiac Arrest / Crowd Control",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_039": {
+      "category": "EMERGENCY",
+      "text": "ಬಾಂಬ್ ಬಸ್ ಸ್ಟಾಂಡ್, ೩೦ ಇಂಜುರ್ಡ್, ಟ್ರಾಮಾ!",
+      "expected_intent": "Bomb Blast Event",
+      "expected_confidence": 0.94,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_040": {
+      "category": "EMERGENCY",
+      "text": "ಲೇಬರ್ ಬೇಬಿ ಸ್ಟಕ್, ಸಿಸೇರಿಯನ್ ಎಮರ್ಜೆನ್ಸಿ!",
+      "expected_intent": "Critical Obstetric Emergency",
+      "expected_confidence": 0.96,
+      "expected_urgency": 0.90,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_041": {
+      "category": "EMERGENCY",
+      "text": "ಎಲೆಕ್ಟ್ರಿಕ್ ವೈರ್ ಲೈವ್ ಫಾಲ್, ಶಾಕ್ ಮಲ್ಟಿಪಲ್, ಪವರ್ ಕಟ್!",
+      "expected_intent": "Active Electrocution / Electrical Hazard",
+      "expected_confidence": 0.91,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_042": {
+      "category": "EMERGENCY",
+      "text": "ಕಿಡ್ನ್ಯಾಪಿಂಗ್ ಲೈವ್ ಟ್ರ್ಯಾಕ್, GPS ಚೇಸ್ ಪೊಲೀಸ್!",
+      "expected_intent": "Active Kidnapping / Search",
+      "expected_confidence": 0.93,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_043": {
+      "category": "EMERGENCY",
+      "text": "ಆಸ್ಪತಾಲೆ ಫೈರ್ ವೆಂಟಿಲೇಟರ್ ವಾರ್ಡ್, ಎವಾಕ್ಯು!",
+      "expected_intent": "Critical Hospital Structure Fire",
+      "expected_confidence": 0.97,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_044": {
+      "category": "EMERGENCY",
+      "text": "ಸ್ಕೂಲ್ ಬಸ್ ಕ್ಲಿಫ್ ಕ್ರ್ಯಾಶ್, ೫೦ ಕಿಡ್ಸ್, ಹೆಲಿ!",
+      "expected_intent": "Mass Child Disaster / Rescue",
+      "expected_confidence": 0.98,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_045": {
+      "category": "EMERGENCY",
+      "text": "ಟ್ಯಾಂಕರ್ ಕೆಮಿಕಲ್ ಲೀಕ್, ಎಕ್ಸ್‌ಪ್ಲೋಷನ್, ಹ್ಯಾಝ್‌ಮ್ಯಾಟ್!",
+      "expected_intent": "Hazardous Spill / Explosion Hazard",
+      "expected_confidence": 0.96,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_046": {
+      "category": "EMERGENCY",
+      "text": "ರೇಡಿಯೋ ಟ್ರಕ್ ಕ್ರ್ಯಾಶ್, ಎಕ್ಸ್‌ಪೋಸ್ಚರ್, ಎವಾಕ್ಯು!",
+      "expected_intent": "Radiological Truck Disaster",
+      "expected_confidence": 0.95,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_047": {
+      "category": "EMERGENCY",
+      "text": "ಮೆಟ್ರೋ ಸ್ಟೇಷನ್ ಬಾಂಬ್, ಎವಾಕ್ಯುಯೇಷನ್!",
+      "expected_intent": "Transit Security Threat",
+      "expected_confidence": 0.94,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_048": {
+      "category": "EMERGENCY",
+      "text": "ಹಾರ್ಟ್ ಅಟ್ಯಾಕ್ ಮ್ಯಾರಾಥಾನ್, ೧೦ ರನ್ನರ್ಸ್!",
+      "expected_intent": "Mass Cardiac Emergency",
+      "expected_confidence": 0.97,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_049": {
+      "category": "EMERGENCY",
+      "text": "ಗ್ಯಾಸ್ ಲೀಕ್ ಮಾಲ್, ಎಕ್ಸ್‌ಪ್ಲೋಷನ್ ರಿಸ್ಕ್!",
+      "expected_intent": "Public Hazardous Leak",
+      "expected_confidence": 0.94,
+      "expected_urgency": 0.98,
+      "expected_decision": "ESCALATE"
+    },
+    "BATCH_K3_ESCALATE_050": {
+      "category": "EMERGENCY",
+      "text": "ಶೂಟರ್ ಮಾಲ್ ಲೂಸ್, ಲಾಕ್‌ಡೌನ್ ಸ್ವಾಟ್!",
+      "expected_intent": "Active Shooter (Public)",
+      "expected_confidence": 0.98,
+      "expected_urgency": 1.00,
+      "expected_decision": "ESCALATE"
+    }
+  }
+}
