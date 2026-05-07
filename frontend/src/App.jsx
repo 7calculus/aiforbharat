@@ -5,43 +5,46 @@ import {
   HelpCircle, Activity, Shield, Zap, Clock, Wifi, User, Radio
 } from "lucide-react";
 
-// ── Mock data & logic ────────────────────────────────────────────────────────
-const INTENT_MAP = [
-  { keywords: ["follow","following","stalker","stalking","scared","help me","danger"], intent: "Harassment / Stalking", urgency: "HIGH", confidence: 0.94 },
-  { keywords: ["fight","hitting","punch","violence","attack","weapon","knife","gun"],   intent: "Physical Violence",    urgency: "HIGH", confidence: 0.91 },
-  { keywords: ["fire","burning","smoke","explosion"],                                   intent: "Fire / Explosion",     urgency: "HIGH", confidence: 0.89 },
-  { keywords: ["accident","crash","injured","bleeding","unconscious"],                 intent: "Medical Emergency",    urgency: "HIGH", confidence: 0.88 },
-  { keywords: ["argument","shouting","yelling","noise","disturbance"],                 intent: "Disturbance / Dispute",urgency: "MEDIUM", confidence: 0.75 },
-  { keywords: ["suspicious","strange","weird","unsure","don't know","maybe"],          intent: "Suspicious Activity",  urgency: "MEDIUM", confidence: 0.58 },
-  { keywords: ["lost","missing","theft","stolen","break-in"],                          intent: "Property Crime",       urgency: "MEDIUM", confidence: 0.72 },
-];
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "/api";
+async function apiChat(sessionId, message, location, history) {
+  const res = await fetch(`${API_BASE}/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ session_id: sessionId, message, location, history }),
+  });
+  if (!res.ok) throw new Error("API error: " + res.status);
+  return res.json();
+}
 
-function mockAnalyze(text) {
-  const lower = text.toLowerCase();
-  for (const rule of INTENT_MAP) {
-    if (rule.keywords.some((k) => lower.includes(k))) {
-      const decision = rule.urgency === "HIGH" ? "ESCALATE" : rule.confidence < 0.65 ? "CONFIRM" : "PROCEED";
-      return { intent: rule.intent, confidence: rule.confidence, urgency: rule.urgency, decision };
-    }
-  }
-  return { intent: "Unknown / Unclear", confidence: 0.31, urgency: "LOW", decision: "CONFIRM" };
+async function apiEndCall(sessionId, duration, intent, confidence, decision, location) {
+  const res = await fetch(`${API_BASE}/calls/end`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ session_id: sessionId, duration, intent, confidence, decision, location }),
+  });
+  if (!res.ok) throw new Error("API error: " + res.status);
+  return res.json();
+}
+
+async function apiFetchCalls() {
+  const res = await fetch(`${API_BASE}/calls`);
+  if (!res.ok) throw new Error("API error: " + res.status);
+  return res.json();
+}
+
+async function apiFetchStats() {
+  const res = await fetch(`${API_BASE}/stats`);
+  if (!res.ok) throw new Error("API error: " + res.status);
+  return res.json();
 }
 
 const DECISION_CFG = {
-  ESCALATE: { color: "#ff4757", glow: "rgba(255,71,87,0.35)",   icon: AlertTriangle, label: "ESCALATE", sub: "Immediate dispatch required" },
-  CONFIRM:  { color: "#ffa502", glow: "rgba(255,165,2,0.35)",   icon: HelpCircle,    label: "CONFIRM",  sub: "Clarification needed" },
-  PROCEED:  { color: "#2ed573", glow: "rgba(46,213,115,0.35)",  icon: CheckCircle,   label: "PROCEED",  sub: "Situation under control" },
+  ESCALATE: { color: "#ff4757", glow: "rgba(255,71,87,0.35)",  icon: AlertTriangle, label: "ESCALATE", sub: "Immediate dispatch required" },
+  CONFIRM:  { color: "#ffa502", glow: "rgba(255,165,2,0.35)",  icon: HelpCircle,    label: "CONFIRM",  sub: "Clarification needed" },
+  PROCEED:  { color: "#2ed573", glow: "rgba(46,213,115,0.35)", icon: CheckCircle,   label: "PROCEED",  sub: "Situation under control" },
 };
 
-const INITIAL_LOG = [
-  { id: 1, time: "14:23", duration: "2m 14s", intent: "Harassment / Stalking", confidence: 0.94, decision: "ESCALATE" },
-  { id: 2, time: "13:47", duration: "1m 08s", intent: "Disturbance / Dispute",  confidence: 0.75, decision: "PROCEED"  },
-  { id: 3, time: "12:55", duration: "3m 42s", intent: "Unknown / Unclear",      confidence: 0.29, decision: "CONFIRM"  },
-];
-
-// ── Sub-components ────────────────────────────────────────────────────────────
 function StatCard({ icon: Icon, value, label, color }) {
   return (
     <div className="stat-card">
@@ -78,15 +81,23 @@ function IncomingCallOverlay({ onAccept, onDecline }) {
   );
 }
 
-function ActiveCallPanel({ onEnd, callLog, onAddLog }) {
+function ActiveCallPanel({ onEnd, onCallLogged }) {
+  const SESSION_ID = useRef(`call-${Date.now()}`).current;
+  const LOCATION   = "Sector 14, New Delhi";
+
   const [inputText, setInputText]   = useState("");
-  const [transcript, setTranscript] = useState([{ id: Date.now(), label: "SYSTEM", text: "Call accepted. SPASHT AI monitoring active.", time: "00:00" }]);
-  const [result, setResult]         = useState(null);
-  const [analyzing, setAnalyzing]   = useState(false);
-  const [callTime, setCallTime]     = useState(0);
-  const timerRef    = useRef(null);
+  const [transcript, setTranscript] = useState([
+    { id: Date.now(), label: "SYSTEM", text: "Call accepted. SPASHT AI monitoring active.", time: "00:00" }
+  ]);
+  const [result, setResult]   = useState(null);
+  const [analyzing, setAnalyzing] = useState(false);
+  const [callTime, setCallTime]   = useState(0);
+  const [apiError, setApiError]   = useState(null);
+
+  const historyRef    = useRef([]);
+  const timerRef      = useRef(null);
   const transcriptRef = useRef(null);
-  const startRef    = useRef(Date.now());
+  const startRef      = useRef(Date.now());
 
   useEffect(() => {
     timerRef.current = setInterval(() => setCallTime(t => t + 1), 1000);
@@ -100,43 +111,50 @@ function ActiveCallPanel({ onEnd, callLog, onAddLog }) {
   const fmt = s => `${String(Math.floor(s/60)).padStart(2,"0")}:${String(s%60).padStart(2,"0")}`;
 
   const handleSend = async () => {
-    const text = inputText.trim(); if (!text) return;
+    const text = inputText.trim(); if (!text || analyzing) return;
     const time = fmt(callTime);
+    setApiError(null);
     setTranscript(t => [...t, { id: Date.now(), label: "CALLER", text, time }]);
     setInputText("");
     setAnalyzing(true);
+    historyRef.current.push({ role: "caller", content: text });
 
     try {
-      const resp = await fetch(`${API_BASE}/analyze`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text }),
-      });
-
-      if (!resp.ok) {
-        throw new Error(`Backend error: ${resp.status}`);
-      }
-
-      const a = await resp.json();
-      setResult(a);
-      setTranscript(t => [...t, { id: Date.now()+1, label: "AI", text: `Intent: ${a.intent} · Confidence: ${Math.round(a.confidence*100)}% · Decision: ${a.decision}`, time: fmt(callTime) }]);
-    } catch (error) {
-      const fallback = mockAnalyze(text);
-      setResult(fallback);
-      setTranscript(t => [...t, { id: Date.now()+1, label: "AI", text: `Unable to reach backend, using local fallback. Intent: ${fallback.intent} · Decision: ${fallback.decision}`, time: fmt(callTime) }]);
-      console.error("Analyze request failed:", error);
+      const data = await apiChat(SESSION_ID, text, LOCATION, historyRef.current);
+      if (data.intent) setResult(data.intent);
+      const aiText = data.ai_message;
+      setTranscript(t => [
+        ...t,
+        { id: Date.now()+1, label: "AI", text: aiText, time: fmt(callTime) },
+        ...(data.intent ? [{
+          id: Date.now()+2, label: "SYSTEM",
+          text: `Intent: ${data.intent.intent} · ${Math.round(data.intent.confidence*100)}% · ${data.intent.decision}`,
+          time: fmt(callTime)
+        }] : [])
+      ]);
+      historyRef.current.push({ role: "ai", content: aiText });
+    } catch (err) {
+      setApiError("Backend unreachable — is the FastAPI server running on port 8000?");
+      setTranscript(t => [...t, {
+        id: Date.now()+1, label: "SYSTEM",
+        text: "⚠️ Cannot reach SPASHT API. Start the backend with: uvicorn main:app --reload",
+        time: fmt(callTime)
+      }]);
     } finally {
       setAnalyzing(false);
     }
   };
 
-  const handleEnd = () => {
+  const handleEnd = async () => {
     const elapsed = Math.round((Date.now() - startRef.current) / 1000);
     const m = Math.floor(elapsed/60), s = elapsed%60;
     const dur = `${m}m ${String(s).padStart(2,"0")}s`;
-    const now = new Date();
-    const timeStr = `${String(now.getHours()).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}`;
-    if (result) onAddLog({ id: Date.now(), time: timeStr, duration: dur, intent: result.intent, confidence: result.confidence, decision: result.decision });
+    if (result) {
+      try {
+        await apiEndCall(SESSION_ID, dur, result.intent, result.confidence, result.decision, LOCATION);
+        onCallLogged();
+      } catch (_) {}
+    }
     onEnd();
   };
 
@@ -150,12 +168,11 @@ function ActiveCallPanel({ onEnd, callLog, onAddLog }) {
 
   return (
     <motion.div className="active-call-panel" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
-      {/* Active call header bar */}
       <div className="acall-header">
         <div className="acall-header-left">
           <span className="live-dot" />
           <span className="acall-title">ACTIVE CALL — 1092-4471</span>
-          <span className="acall-loc">📍 Sector 14, New Delhi</span>
+          <span className="acall-loc">📍 {LOCATION}</span>
         </div>
         <div className="acall-header-right">
           <span className="acall-timer">{fmt(callTime)}</span>
@@ -163,10 +180,13 @@ function ActiveCallPanel({ onEnd, callLog, onAddLog }) {
         </div>
       </div>
 
+      {apiError && <div className="api-error-banner">⚠️ {apiError}</div>}
+
       <div className="acall-body">
-        {/* Transcript */}
         <div className="acall-transcript-col">
-          <div className="acall-section-label"><Mic size={13} /> Live Transcript {analyzing && <span className="analyzing-pill">Analyzing…</span>}</div>
+          <div className="acall-section-label">
+            <Mic size={13} /> Live Transcript {analyzing && <span className="analyzing-pill">AI thinking…</span>}
+          </div>
           <div className="transcript-scroll" ref={transcriptRef}>
             {transcript.map(e => (
               <motion.div key={e.id} initial={{ opacity:0, x:-12 }} animate={{ opacity:1, x:0 }} className="te">
@@ -188,7 +208,6 @@ function ActiveCallPanel({ onEnd, callLog, onAddLog }) {
           </div>
         </div>
 
-        {/* Decision */}
         <div className="acall-decision-col">
           <div className="acall-section-label"><Activity size={13} /> AI Decision Engine</div>
           <AnimatePresence mode="wait">
@@ -205,10 +224,19 @@ function ActiveCallPanel({ onEnd, callLog, onAddLog }) {
                   <div className="dmetric-label"><Zap size={11}/> INTENT</div>
                   <div className="dmetric-val">{result.intent}</div>
                 </div>
+                {result.reasoning && (
+                  <div className="dmetric">
+                    <div className="dmetric-label"><Radio size={11}/> REASONING</div>
+                    <div className="dmetric-val" style={{fontSize:"0.72rem",opacity:0.8,lineHeight:1.4}}>{result.reasoning}</div>
+                  </div>
+                )}
                 <div className="dmetric">
                   <div className="dmetric-label"><Activity size={11}/> CONFIDENCE</div>
                   <div className="dmetric-val conf-big">{Math.round(result.confidence*100)}%</div>
-                  <div className="conf-track"><motion.div className="conf-fill" initial={{width:0}} animate={{width:`${result.confidence*100}%`}} transition={{duration:0.8,ease:"easeOut"}} style={{background:`linear-gradient(90deg,${cfg.color}66,${cfg.color})`}} /></div>
+                  <div className="conf-track">
+                    <motion.div className="conf-fill" initial={{width:0}} animate={{width:`${result.confidence*100}%`}}
+                      transition={{duration:0.8,ease:"easeOut"}} style={{background:`linear-gradient(90deg,${cfg.color}66,${cfg.color})`}} />
+                  </div>
                 </div>
                 <div className="dmetric">
                   <div className="dmetric-label"><Shield size={11}/> URGENCY</div>
@@ -219,7 +247,7 @@ function ActiveCallPanel({ onEnd, callLog, onAddLog }) {
               <motion.div key="waiting" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} className="decision-waiting">
                 <Shield size={36} className="dw-icon" />
                 <p>Awaiting input…</p>
-                <p className="dw-sub">Type a message to trigger the decision engine</p>
+                <p className="dw-sub">Type a message to trigger the AI agent</p>
               </motion.div>
             )}
           </AnimatePresence>
@@ -229,25 +257,31 @@ function ActiveCallPanel({ onEnd, callLog, onAddLog }) {
   );
 }
 
-// ── Main App ─────────────────────────────────────────────────────────────────
 export default function App() {
-  const [phase, setPhase]     = useState("idle"); // idle | incoming | active
-  const [callLog, setCallLog] = useState(INITIAL_LOG);
-  const [clock, setClock]     = useState("");
+  const [phase, setPhase]   = useState("idle");
+  const [callLog, setCallLog] = useState([]);
+  const [stats, setStats]   = useState({ total:0, escalated:0, confirmed:0, proceeded:0 });
+  const [clock, setClock]   = useState("");
   const audioCtxRef = useRef(null);
 
-  // Clock
   useEffect(() => {
     const tick = () => {
       const n = new Date();
       setClock(`${String(n.getHours()).padStart(2,"0")}:${String(n.getMinutes()).padStart(2,"0")}:${String(n.getSeconds()).padStart(2,"0")}`);
     };
-    tick();
-    const id = setInterval(tick, 1000);
-    return () => clearInterval(id);
+    tick(); const id = setInterval(tick, 1000); return () => clearInterval(id);
   }, []);
 
-  // Ringing sound
+  const refreshData = async () => {
+    try {
+      const [logData, statsData] = await Promise.all([apiFetchCalls(), apiFetchStats()]);
+      setCallLog(logData.entries || []);
+      setStats(statsData);
+    } catch (_) {}
+  };
+
+  useEffect(() => { refreshData(); }, []);
+
   useEffect(() => {
     if (phase !== "incoming") {
       if (audioCtxRef.current) { audioCtxRef.current.close(); audioCtxRef.current = null; }
@@ -271,20 +305,11 @@ export default function App() {
     return () => { stopped = true; };
   }, [phase]);
 
-  const stats = {
-    total:     callLog.length,
-    escalated: callLog.filter(c => c.decision === "ESCALATE").length,
-    confirmed: callLog.filter(c => c.decision === "CONFIRM").length,
-    proceeded: callLog.filter(c => c.decision === "PROCEED").length,
-  };
-
   const todayStr = new Date().toLocaleDateString("en-GB", { day:"2-digit", month:"short", year:"numeric" });
 
   return (
     <div className="app">
       <div className="bg-grid" />
-
-      {/* ── Incoming call overlay ── */}
       <AnimatePresence>
         {phase === "incoming" && (
           <IncomingCallOverlay
@@ -294,9 +319,7 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      {/* ── Persistent dashboard shell ── */}
       <div className="shell">
-        {/* Top nav */}
         <nav className="topnav">
           <div className="topnav-brand">
             <div className="brand-icon"><Shield size={16} /></div>
@@ -318,7 +341,6 @@ export default function App() {
           </div>
         </nav>
 
-        {/* Stats row */}
         <div className="stats-row">
           <StatCard icon={Phone}         value={stats.total}     label="TOTAL CALLS" color="#38bdf8" />
           <StatCard icon={AlertTriangle} value={stats.escalated} label="ESCALATED"   color="#ff4757" />
@@ -326,15 +348,13 @@ export default function App() {
           <StatCard icon={CheckCircle}   value={stats.proceeded} label="PROCEEDED"   color="#2ed573" />
         </div>
 
-        {/* Main content */}
         <div className="main-content">
           <AnimatePresence mode="wait">
             {phase === "active" ? (
               <ActiveCallPanel
                 key="active"
-                callLog={callLog}
-                onAddLog={entry => setCallLog(l => [entry, ...l])}
-                onEnd={() => setPhase("idle")}
+                onCallLogged={refreshData}
+                onEnd={() => { setPhase("idle"); refreshData(); }}
               />
             ) : (
               <motion.div key="idle" className="system-ready-panel" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
@@ -352,7 +372,6 @@ export default function App() {
           </AnimatePresence>
         </div>
 
-        {/* Call log */}
         <div className="calllog-section">
           <div className="calllog-header">
             <span className="calllog-title"><Clock size={14} /> CALL LOG</span>
@@ -360,13 +379,7 @@ export default function App() {
           </div>
           <table className="calllog-table">
             <thead>
-              <tr>
-                <th>TIME</th>
-                <th>DURATION</th>
-                <th>INTENT</th>
-                <th>CONFIDENCE</th>
-                <th>DECISION</th>
-              </tr>
+              <tr><th>TIME</th><th>DURATION</th><th>INTENT</th><th>CONFIDENCE</th><th>DECISION</th></tr>
             </thead>
             <tbody>
               {callLog.map(row => (
@@ -382,6 +395,11 @@ export default function App() {
               ))}
             </tbody>
           </table>
+          {callLog.length === 0 && (
+            <div style={{textAlign:"center",padding:"1.5rem",color:"rgba(255,255,255,0.3)",fontSize:"0.8rem"}}>
+              No calls logged yet — simulate a call above
+            </div>
+          )}
         </div>
       </div>
     </div>
