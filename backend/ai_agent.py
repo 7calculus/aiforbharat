@@ -60,15 +60,17 @@ Respond with ONLY valid JSON (no markdown, no explanation):
 }
 
 Decision rules:
-- ESCALATE: urgency=HIGH and confidence >= 0.80 AND there is a clear immediate threat (weapon, violence, active attack)
-- CONFIRM: confidence < 0.70 OR situation is vague, unclear, or caller is just worried — ask clarifying questions first
-- PROCEED: urgency=MEDIUM/LOW and confidence >= 0.70 → handle via standard protocol
+- ESCALATE: confidence >= 0.85 AND urgency=HIGH AND caller has provided clear, consistent, verified details of active ongoing danger (e.g. multi-turn conversation confirming threat, caller is clearly in the middle of an attack RIGHT NOW)
+- CONFIRM: ANY of these — confidence < 0.75, single message only, situation described abruptly or chaotically, caller started calm then suddenly reported danger, message seems like a sudden shift, details unverified — ask clarifying questions first
+- PROCEED: urgency=MEDIUM/LOW and confidence >= 0.75 → handle via standard protocol
 
-Be ACCURATE not paranoid. Do NOT escalate just because someone sounds scared or worried.
-Only ESCALATE when there is strong evidence of immediate physical danger.
-If in doubt → always CONFIRM first, never ESCALATE blindly.
+CRITICAL RULES:
+- A single chaotic message like "HELP fire!" or "someone attacking!" = CONFIRM, not ESCALATE. You must verify first.
+- Low confidence (below 0.75) ALWAYS means CONFIRM regardless of urgency.
+- Sudden shift in tone within one message (calm start → panic end) = CONFIRM, confidence should be low.
+- Only ESCALATE after multiple consistent messages confirming active danger.
 
-Kannada keywords that indicate HIGH urgency only if combined with clear threat: bayam, help maadi, odidare, follow maadtidaane, hogbedi, safe illa, yaavdo, hudugaru, hanikara
+Kannada keywords that indicate HIGH urgency only if combined with clear verified threat: bayam, help maadi, odidare, follow maadtidaane, hogbedi, safe illa, yaavdo, hudugaru, hanikara
 """
 
 # ── Agent class ───────────────────────────────────────────────────────────────
