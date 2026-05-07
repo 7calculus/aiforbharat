@@ -60,12 +60,15 @@ Respond with ONLY valid JSON (no markdown, no explanation):
 }
 
 Decision rules:
-- ESCALATE: urgency=HIGH and confidence >= 0.70 → dispatch immediately
-- CONFIRM: confidence < 0.65 OR situation ambiguous → ask clarifying questions
-- PROCEED: urgency=MEDIUM/LOW and confidence >= 0.65 → handle via standard protocol
+- ESCALATE: urgency=HIGH and confidence >= 0.80 AND there is a clear immediate threat (weapon, violence, active attack)
+- CONFIRM: confidence < 0.70 OR situation is vague, unclear, or caller is just worried — ask clarifying questions first
+- PROCEED: urgency=MEDIUM/LOW and confidence >= 0.70 → handle via standard protocol
 
-Kannada keywords that indicate HIGH urgency: bayam, help maadi, odidare, follow maadtidaane, hogbedi, safe illa, yaavdo, hudugaru, hanikara
-Be conservative: when in doubt, ESCALATE rather than CONFIRM.
+Be ACCURATE not paranoid. Do NOT escalate just because someone sounds scared or worried.
+Only ESCALATE when there is strong evidence of immediate physical danger.
+If in doubt → always CONFIRM first, never ESCALATE blindly.
+
+Kannada keywords that indicate HIGH urgency only if combined with clear threat: bayam, help maadi, odidare, follow maadtidaane, hogbedi, safe illa, yaavdo, hudugaru, hanikara
 """
 
 # ── Agent class ───────────────────────────────────────────────────────────────
